@@ -3,8 +3,9 @@ import MediaQuery from 'react-responsive';
 
 import SideImage from 'components/SignUpPage/SideImage';
 import SignUpForm from 'components/SignUpPage/SignUpForm';
+import NavBar from 'components/NavBar';
 
-import { MainLayout, FormContainer } from './index.styled';
+import { MainLayout, Container, FormContainer } from './index.styled';
 
 const SignUpPage = () => (
   <MainLayout>
@@ -20,9 +21,12 @@ const SignUpPage = () => (
         message="Obtive crédito para capital de giro. O processo foi bem sucedido e tudo que foi abordado, foi cumprido."
       />
     </MediaQuery>
-    <FormContainer>
-      <SignUpForm />
-    </FormContainer>
+    <Container>
+      <NavBar />
+      <FormContainer>
+        <SignUpForm />
+      </FormContainer>
+    </Container>
   </MainLayout>
 );
 
