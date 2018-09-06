@@ -1,6 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import SignUpPage from 'pages/SignUpPage';
+import { ThemeProvider } from 'styled-components';
 
-ReactDOM.render(<SignUpPage />, document.getElementById('root'));
+import SignUpPage from 'pages/SignUpPage';
+import defaultTheme from './theme';
+
+import './index.css';
+
+const App = () => (
+  <ThemeProvider theme={defaultTheme}>
+    <SignUpPage />
+  </ThemeProvider>
+);
+
+ReactDOM.render(<App />, document.getElementById('root'));

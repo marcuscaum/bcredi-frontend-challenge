@@ -1,6 +1,7 @@
 import React from 'react';
 
 import SideImage from 'components/SignUpPage/SideImage';
+import SignUpForm from 'components/SignUpPage/SignUpForm';
 
 import { MainLayout, FormContainer } from './index.styled';
 
@@ -13,10 +14,12 @@ const SignUpPage = () => (
           <br />
           Sideral Tecnologia
         </React.Fragment>
-      )}
+)}
       message="Obtive crédito para capital de giro. O processo foi bem sucedido e tudo que foi abordado, foi cumprido."
     />
-    <FormContainer />
+    <FormContainer>
+      <SignUpForm />
+    </FormContainer>
   </MainLayout>
 );
 

@@ -23,7 +23,6 @@ export const MessageBox = styled.div`
   flex-direction: column;
   margin: 0 40px 40px 0;
   width: 370px;
-  font-family: Arial;
   color: white;
   text-align: right;
   line-height: 1.5;
