@@ -23,5 +23,8 @@
     "fetch": true,
     "document": true,
     "it": true
+  },
+  "env": {
+    "jest": true
   }
 }
