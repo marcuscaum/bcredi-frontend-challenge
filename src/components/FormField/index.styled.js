@@ -1,13 +1,20 @@
 import styled from 'styled-components';
 
-export const Section = styled.section`
+export const Section = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 35px;
+  min-width: 0;
+
   input {
     padding: 14px;
     font-size: 16px;
     border-radius: 3px;
     border: 1px solid #e6e6e6;
+
+    &::placeholder {
+      color: #cccccc;
+    }
   }
 `;
 
