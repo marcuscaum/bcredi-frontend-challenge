@@ -22,8 +22,9 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.{js,json,css,md}": [
+    "src/**/*.js": [
       "eslint --fix src",
+      "jest --bail --findRelatedTests",
       "git add"
     ]
   },
