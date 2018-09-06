@@ -21,12 +21,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "test:staged": "eslint --fix src && CI=true react-scripts test --env=jsdom --findRelatedTests"
   },
   "lint-staged": {
     "src/**/*.js": [
-      "eslint --fix src",
-      "jest --findRelatedTests",
+      "yarn run test:staged",
       "git add"
     ]
   },
