@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Section = styled.div`
+export const FormField = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 35px;
