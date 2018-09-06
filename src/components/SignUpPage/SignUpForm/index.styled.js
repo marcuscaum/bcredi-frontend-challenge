@@ -16,6 +16,7 @@ export const SignUpForm = styled.section`
       font-size: 24px;
       font-weight: bold;
       margin: 0;
+      line-height: 1.25;
     }
 
     h2 {
@@ -23,6 +24,7 @@ export const SignUpForm = styled.section`
       font-weight: normal;
       margin-top: 6px;
       margin-bottom: 24px;
+      line-height: 1.5;
       color: ${({ theme: { lightGray } }) => lightGray};
     }
   }

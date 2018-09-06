@@ -1,6 +1,9 @@
 import React from 'react';
 
 import FormField from 'components/FormField';
+import Button from 'components/Button';
+
+import PadlockIcon from 'assets/padlock.svg';
 
 import { Form, FormSection, SignUpForm } from './index.styled';
 
@@ -25,6 +28,13 @@ const SignUpFormComponent = () => (
       <FormField label="Senha">
         <input type="password" placeholder="Cadastre uma senha" />
       </FormField>
+      <Button
+        type="primary"
+        icon={<img src={PadlockIcon} alt="" />}
+        onClick={() => console.log('test')}
+      >
+        Cadastrar
+      </Button>
     </Form>
   </SignUpForm>
 );
