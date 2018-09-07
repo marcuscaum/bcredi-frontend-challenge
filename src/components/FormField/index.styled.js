@@ -10,7 +10,7 @@ export const FormField = styled.div`
     padding: 14px;
     font-size: 16px;
     border-radius: 3px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid ${({ theme: { ultraLightGray } }) => ultraLightGray};
 
     &::placeholder {
       color: #cccccc;

@@ -7,9 +7,9 @@ export const MainLayout = styled.div`
 
 export const FormContainer = styled.div`
   display: flex;
+  flex-direction: column;
   width: 320px;
   margin: 40px auto;
-  flex-direction: column;
 `;
 
 export const Container = styled.div`
