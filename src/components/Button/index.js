@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import Button from './index.styled';
+import Button from "./index.styled";
 
 const ButtonComponent = ({ type, icon, children, ...props }) => (
   <Button type={type} {...props}>

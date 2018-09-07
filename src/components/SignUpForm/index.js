@@ -10,7 +10,7 @@ import {
   FormSection,
   SignUpForm,
   FormHeader,
-  FormFooter
+  FormFooter,
 } from "./index.styled";
 
 const SignUpFormComponent = () => (

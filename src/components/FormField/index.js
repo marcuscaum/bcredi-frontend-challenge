@@ -12,7 +12,7 @@ const FormFieldComponent = ({ label, children }) => (
 
 FormFieldComponent.propTypes = {
   label: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default FormFieldComponent;
