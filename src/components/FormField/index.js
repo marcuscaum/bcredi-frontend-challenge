@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import { FormField, Label } from './index.styled';
+import { FormField, Label } from "./index.styled";
 
 const FormFieldComponent = ({ label, children }) => (
   <FormField>
@@ -12,7 +12,7 @@ const FormFieldComponent = ({ label, children }) => (
 
 FormFieldComponent.propTypes = {
   label: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default FormFieldComponent;
