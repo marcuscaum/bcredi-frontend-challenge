@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import { FormField, Label } from "./index.styled";
+import { FormField, Label } from './index.styled';
 
 const FormFieldComponent = ({ label, children }) => (
   <FormField>

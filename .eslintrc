@@ -1,3 +1,14 @@
 {
-  "extends": ["react-app", "plugin:prettier/recommended"]
+  "extends": ["picter", "plugin:prettier/recommended", "prettier/react"],
+  "plugins": ["react", "prettier"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "rules": {
+    "jsx-a11y/href-no-hash": false
+  }
 }

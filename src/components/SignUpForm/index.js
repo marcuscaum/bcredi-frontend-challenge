@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import FormField from "components/FormField";
-import Button from "components/Button";
+import FormField from 'components/FormField';
+import Button from 'components/Button';
+import Checkbox from 'components/Checkbox';
 
-import PadlockIcon from "assets/padlock.svg";
+import PadlockIcon from 'assets/padlock.svg';
 
 import {
   Form,
@@ -11,7 +12,7 @@ import {
   SignUpForm,
   FormHeader,
   FormFooter,
-} from "./index.styled";
+} from './index.styled';
 
 const SignUpFormComponent = () => (
   <SignUpForm>
@@ -37,6 +38,7 @@ const SignUpFormComponent = () => (
       <FormField label="Senha">
         <input type="password" placeholder="Cadastre uma senha" />
       </FormField>
+      <Checkbox />
       <Button type="primary" icon={<img src={PadlockIcon} alt="" />}>
         Cadastrar
       </Button>

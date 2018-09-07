@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import {
   SideImage,
@@ -7,7 +7,7 @@ import {
   MessageBox,
   MessageContent,
   MessageAuthor,
-} from "./index.styled";
+} from './index.styled';
 
 const SideImageComponent = ({ message, messageAuthor }) => (
   <SideImage>

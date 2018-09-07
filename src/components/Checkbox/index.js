@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import Checkbox from "./index.styled";
+import Checkbox from './index.styled';
 
 const CheckBoxComponent = ({ label, ...props }) => (
   <Checkbox>

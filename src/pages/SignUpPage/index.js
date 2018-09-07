@@ -1,11 +1,11 @@
-import React from "react";
-import MediaQuery from "react-responsive";
+import React from 'react';
+import MediaQuery from 'react-responsive';
 
-import SideImage from "components/SideImage";
-import SignUpForm from "components/SignUpForm";
-import NavBar from "components/NavBar";
+import SideImage from 'components/SideImage';
+import SignUpForm from 'components/SignUpForm';
+import NavBar from 'components/NavBar';
 
-import { MainLayout, Container, FormContainer } from "./index.styled";
+import { MainLayout, Container, FormContainer } from './index.styled';
 
 const SignUpPage = () => (
   <MainLayout>

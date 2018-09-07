@@ -1,11 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { ThemeProvider } from "styled-components";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { ThemeProvider } from 'styled-components';
 
-import SignUpPage from "pages/SignUpPage";
-import defaultTheme from "./theme";
+import SignUpPage from 'pages/SignUpPage';
+import defaultTheme from './theme';
 
-import "./index.css";
+import './index.css';
 
 const App = () => (
   <ThemeProvider theme={defaultTheme}>
@@ -13,4 +13,4 @@ const App = () => (
   </ThemeProvider>
 );
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
