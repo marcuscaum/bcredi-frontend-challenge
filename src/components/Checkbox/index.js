@@ -9,7 +9,7 @@ import {
 
 const CheckBoxComponent = ({ label, name, fontSize, color, ...props }) => (
   <CheckboxContainer>
-    <CheckboxInput id={`${name}-input-checkbox`} {...props} />
+    <CheckboxInput name={name} id={`${name}-input-checkbox`} {...props} />
     <CheckboxLabel
       color={color}
       fontSize={fontSize}

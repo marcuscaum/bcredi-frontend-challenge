@@ -38,7 +38,7 @@ ShallowWrapper {
         <styled.div>
           <NavBarComponent />
           <styled.div>
-                    <SignUpFormComponent />
+                    <withStateHandlers(SignUpFormComponent) />
           </styled.div>
 </styled.div>,
       ],
@@ -94,7 +94,7 @@ ShallowWrapper {
           "children": Array [
             <NavBarComponent />,
             <styled.div>
-              <SignUpFormComponent />
+              <withStateHandlers(SignUpFormComponent) />
 </styled.div>,
           ],
         },
@@ -114,13 +114,13 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <SignUpFormComponent />,
+              "children": <withStateHandlers(SignUpFormComponent) />,
             },
             "ref": null,
             "rendered": Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "class",
               "props": Object {},
               "ref": null,
               "rendered": null,
@@ -161,7 +161,7 @@ ShallowWrapper {
           <styled.div>
             <NavBarComponent />
             <styled.div>
-                        <SignUpFormComponent />
+                        <withStateHandlers(SignUpFormComponent) />
             </styled.div>
 </styled.div>,
         ],
@@ -217,7 +217,7 @@ ShallowWrapper {
             "children": Array [
               <NavBarComponent />,
               <styled.div>
-                <SignUpFormComponent />
+                <withStateHandlers(SignUpFormComponent) />
 </styled.div>,
             ],
           },
@@ -237,13 +237,13 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": <SignUpFormComponent />,
+                "children": <withStateHandlers(SignUpFormComponent) />,
               },
               "ref": null,
               "rendered": Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "function",
+                "nodeType": "class",
                 "props": Object {},
                 "ref": null,
                 "rendered": null,

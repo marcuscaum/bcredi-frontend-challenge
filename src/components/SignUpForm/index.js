@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { withStateHandlers } from 'recompose';
 
 import FormField from 'components/FormField';
 import Button from 'components/Button';
@@ -14,7 +16,7 @@ import {
   FormFooter,
 } from './index.styled';
 
-const SignUpFormComponent = () => (
+const SignUpFormComponent = ({ validation, onChangeInputValue, saveUser }) => (
   <SignUpForm>
     <FormHeader>
       <h1>Criar meu cadastro</h1>
@@ -24,8 +26,19 @@ const SignUpFormComponent = () => (
       </h2>
     </FormHeader>
     <Form>
-      <FormField label="Nome completo" error="test">
-        <input type="text" placeholder="Escreva seu nome completo" />
+      <FormField label="Nome completo" name="name">
+        <input type="text" placeholder="Escreva seu nome completo" required />
+      </FormField>
+      <FormField
+        label="Email"
+        error={validation && validation.email && 'O campo email é obrigatório'}
+      >
+        <input
+          type="text"
+          name="email"
+          placeholder="Escreva seu email"
+          onChange={onChangeInputValue}
+        />
       </FormField>
       <FormSection>
         <FormField label="CPF">
@@ -41,14 +54,21 @@ const SignUpFormComponent = () => (
       <Checkbox
         fontSize="12px"
         color="#cccccc"
+        name="terms_agreement"
+        onChange={onChangeInputValue}
         label={
           <React.Fragment>
-            Li e estou de acordo com a<a href="#"> Política de Privacidade </a>e
-            a Política de Uso de Informações.
+            Li e estou de acordo com a
+            <a href="#to_somewhen"> Política de Privacidade </a>e a
+            <a href="#to_somewhere"> Política de Uso de Informações</a>.
           </React.Fragment>
         }
       />
-      <Button type="primary" icon={<img src={PadlockIcon} alt="" />}>
+      <Button
+        type="primary"
+        icon={<img src={PadlockIcon} alt="" />}
+        onClick={saveUser}
+      >
         Cadastrar
       </Button>
     </Form>
@@ -58,4 +78,35 @@ const SignUpFormComponent = () => (
   </SignUpForm>
 );
 
-export default SignUpFormComponent;
+SignUpFormComponent.propTypes = {
+  validation: PropTypes.object.isRequired,
+  onChangeInputValue: PropTypes.func.isRequired,
+  saveUser: PropTypes.func.isRequired,
+};
+
+export default withStateHandlers(
+  { validation: {}, formValues: {} },
+  {
+    onChangeInputValue: ({ formValues, validation }) => evt => {
+      const inputValue =
+        evt.target.type === 'checkbox' ? evt.target.checked : evt.target.value;
+
+      if (!evt.target.value) {
+        Object.assign(formValues, { [evt.target.name]: null });
+        return Object.assign(validation, {
+          [evt.target.name]: true,
+        });
+      }
+
+      Object.assign(validation, { [evt.target.name]: false });
+      return Object.assign(formValues, {
+        [evt.target.name]: inputValue,
+      });
+    },
+    saveUser: ({ formValues }) => evt => {
+      // function to handle form data
+      evt.preventDefault();
+      return console.log(formValues);
+    },
+  }
+)(SignUpFormComponent);

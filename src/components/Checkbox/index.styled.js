@@ -10,6 +10,11 @@ export const CheckboxLabel = styled.label`
   float: left;
   margin-left: 35px;
 
+  a {
+    text-decoration: none;
+    color: ${({ theme: { primary } }) => primary};
+  }
+
   &::before {
     box-sizing: border-box;
     margin: 8px 12px;

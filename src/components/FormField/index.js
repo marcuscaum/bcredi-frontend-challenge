@@ -12,9 +12,13 @@ const FormFieldComponent = ({ label, error, children }) => (
 );
 
 FormFieldComponent.propTypes = {
+  error: PropTypes.bool,
   label: PropTypes.string.isRequired,
-  error: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+};
+
+FormFieldComponent.defaultProps = {
+  error: null,
 };
 
 export default FormFieldComponent;
