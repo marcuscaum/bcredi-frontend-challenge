@@ -10,11 +10,20 @@ export const FormField = styled.div`
     padding: 14px;
     font-size: 16px;
     border-radius: 3px;
-    border: 1px solid ${({ theme: { ultraLightGray } }) => ultraLightGray};
+    border: 1px solid
+      ${({ error, theme: { destructive, ultraLightGray } }) =>
+        error ? destructive : ultraLightGray};
 
     &::placeholder {
       color: #cccccc;
     }
+  }
+
+  span {
+    color: ${({ theme: { destructive } }) => destructive};
+    line-height: 1.29;
+    font-size: 14px;
+    margin-top: 5px;
   }
 `;
 

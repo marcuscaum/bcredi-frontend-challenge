@@ -24,7 +24,7 @@ const SignUpFormComponent = () => (
       </h2>
     </FormHeader>
     <Form>
-      <FormField label="Nome completo">
+      <FormField label="Nome completo" error="test">
         <input type="text" placeholder="Escreva seu nome completo" />
       </FormField>
       <FormSection>
