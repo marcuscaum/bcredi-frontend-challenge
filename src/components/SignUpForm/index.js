@@ -38,7 +38,16 @@ const SignUpFormComponent = () => (
       <FormField label="Senha">
         <input type="password" placeholder="Cadastre uma senha" />
       </FormField>
-      <Checkbox />
+      <Checkbox
+        fontSize="12px"
+        color="#cccccc"
+        label={
+          <React.Fragment>
+            Li e estou de acordo com a<a href="#"> Política de Privacidade </a>e
+            a Política de Uso de Informações.
+          </React.Fragment>
+        }
+      />
       <Button type="primary" icon={<img src={PadlockIcon} alt="" />}>
         Cadastrar
       </Button>

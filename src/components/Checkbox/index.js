@@ -1,17 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Checkbox from './index.styled';
+import {
+  CheckboxContainer,
+  CheckboxInput,
+  CheckboxLabel,
+} from './index.styled';
 
-const CheckBoxComponent = ({ label, ...props }) => (
-  <Checkbox>
-    <input type="checkbox" {...props} />
-    <span>{label}</span>
-  </Checkbox>
+const CheckBoxComponent = ({ label, name, fontSize, color, ...props }) => (
+  <CheckboxContainer>
+    <CheckboxInput id={`${name}-input-checkbox`} {...props} />
+    <CheckboxLabel
+      color={color}
+      fontSize={fontSize}
+      htmlFor={`${name}-input-checkbox`}
+    >
+      {label}
+    </CheckboxLabel>
+  </CheckboxContainer>
 );
 
 CheckBoxComponent.propTypes = {
-  label: PropTypes.string.isRequired,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  name: PropTypes.string.isRequired,
+  fontSize: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
 };
 
 export default CheckBoxComponent;

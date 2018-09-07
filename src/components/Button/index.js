@@ -12,7 +12,7 @@ const ButtonComponent = ({ type, icon, children, ...props }) => (
 
 ButtonComponent.propTypes = {
   type: PropTypes.string.isRequired,
-  icon: PropTypes.string,
+  icon: PropTypes.object,
 };
 
 ButtonComponent.defaultProps = {
