@@ -28,11 +28,7 @@ const SignUpFormComponent = () => (
       <FormField label="Senha">
         <input type="password" placeholder="Cadastre uma senha" />
       </FormField>
-      <Button
-        type="primary"
-        icon={<img src={PadlockIcon} alt="" />}
-        onClick={() => console.log('test')}
-      >
+      <Button type="primary" icon={<img src={PadlockIcon} alt="" />}>
         Cadastrar
       </Button>
     </Form>
