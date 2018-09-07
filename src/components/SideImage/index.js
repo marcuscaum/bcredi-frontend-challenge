@@ -6,7 +6,7 @@ import {
   MessageContainer,
   MessageBox,
   MessageContent,
-  MessageAuthor
+  MessageAuthor,
 } from "./index.styled";
 
 const SideImageComponent = ({ message, messageAuthor }) => (
@@ -23,7 +23,7 @@ const SideImageComponent = ({ message, messageAuthor }) => (
 SideImageComponent.propTypes = {
   message: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   messageAuthor: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
-    .isRequired
+    .isRequired,
 };
 
 export default SideImageComponent;
