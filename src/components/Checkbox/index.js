@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import Checkbox from './index.styled';
+import Checkbox from "./index.styled";
 
 const CheckBoxComponent = ({ label, ...props }) => (
   <Checkbox>
@@ -11,7 +11,7 @@ const CheckBoxComponent = ({ label, ...props }) => (
 );
 
 CheckBoxComponent.propTypes = {
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired
 };
 
 export default CheckBoxComponent;
