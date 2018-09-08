@@ -1,0 +1,22 @@
+---
+name: FormField
+---
+
+
+import { Playground, PropsTable } from 'docz'
+import FormField from './index'
+
+# FormField
+
+<PropsTable of={FormField} />
+
+## Basic usage
+
+<Playground>
+  <FormField 
+    label="Exemplo de label"
+    error="Digite um email válido"
+  >
+    <input type="text" placeholder="Digite aqui seu email" />
+  </FormField>
+</Playground>
