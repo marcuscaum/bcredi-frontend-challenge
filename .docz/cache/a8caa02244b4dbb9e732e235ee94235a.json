@@ -1,1 +1,41 @@
-{"remainingRequest":"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js?{\"presets\":[[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-preset-docz/dist/index.js\",{\"flow\":true,\"typescript\":false,\"parseProps\":true}]],\"plugins\":[],\"cacheDirectory\":true,\"babelrc\":false}!/home/ubuntu/bcredi-frontend-challenge/src/components/FormField/index.js","dependencies":[{"path":"/home/ubuntu/bcredi-frontend-challenge/src/components/FormField/index.js","mtime":1536431985862},{"path":"/home/ubuntu/bcredi-frontend-challenge/node_modules/cache-loader/dist/cjs.js","mtime":0},{"path":"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js","mtime":499162500000}],"contextDependencies":[],"result":["import React from 'react';\nimport { FormField, Label } from './index.styled';\nexport var FormFieldComponent = function FormFieldComponent(_ref) {\n  var label = _ref.label,\n      error = _ref.error,\n      children = _ref.children;\n  return React.createElement(FormField, {\n    error: error\n  }, label && React.createElement(Label, null, label), children, error && React.createElement(\"span\", null, error));\n};\nFormFieldComponent.defaultProps = {\n  error: null,\n  label: null\n};\nexport default FormFieldComponent;\nFormFieldComponent.__docgenInfo = {\n  \"description\": \"\",\n  \"methods\": [],\n  \"displayName\": \"FormFieldComponent\",\n  \"props\": {\n    \"error\": {\n      \"defaultValue\": {\n        \"value\": \"null\",\n        \"computed\": false\n      },\n      \"type\": {\n        \"name\": \"union\",\n        \"value\": [{\n          \"name\": \"string\"\n        }, {\n          \"name\": \"bool\"\n        }]\n      },\n      \"required\": false,\n      \"description\": \"\"\n    },\n    \"label\": {\n      \"defaultValue\": {\n        \"value\": \"null\",\n        \"computed\": false\n      },\n      \"type\": {\n        \"name\": \"string\"\n      },\n      \"required\": false,\n      \"description\": \"\"\n    },\n    \"children\": {\n      \"type\": {\n        \"name\": \"union\",\n        \"value\": [{\n          \"name\": \"array\"\n        }, {\n          \"name\": \"element\"\n        }, {\n          \"name\": \"node\"\n        }]\n      },\n      \"required\": true,\n      \"description\": \"\"\n    }\n  }\n};",{"version":3,"sources":["/home/ubuntu/bcredi-frontend-challenge/src/components/FormField/index.js"],"names":["React","FormField","Label","FormFieldComponent","label","error","children","defaultProps"],"mappings":"AAAA,OAAOA,KAAP,MAAkB,OAAlB;AAGA,SAASC,SAAT,EAAoBC,KAApB,QAAiC,gBAAjC;AAEA,OAAO,IAAMC,kBAAkB,GAAG,SAArBA,kBAAqB;AAAA,MAAGC,KAAH,QAAGA,KAAH;AAAA,MAAUC,KAAV,QAAUA,KAAV;AAAA,MAAiBC,QAAjB,QAAiBA,QAAjB;AAAA,SAChC,oBAAC,SAAD;AAAW,IAAA,KAAK,EAAED;AAAlB,KACGD,KAAK,IAAI,oBAAC,KAAD,QAAQA,KAAR,CADZ,EAEGE,QAFH,EAGGD,KAAK,IAAI,kCAAOA,KAAP,CAHZ,CADgC;AAAA,CAA3B;AAkBPF,kBAAkB,CAACI,YAAnB,GAAkC;AAChCF,EAAAA,KAAK,EAAE,IADyB;AAEhCD,EAAAA,KAAK,EAAE;AAFyB,CAAlC;AAKA,eAAeD,kBAAf","sourcesContent":["import React from 'react';\nimport PropTypes from 'prop-types';\n\nimport { FormField, Label } from './index.styled';\n\nexport const FormFieldComponent = ({ label, error, children }) => (\n  <FormField error={error}>\n    {label && <Label>{label}</Label>}\n    {children}\n    {error && <span>{error}</span>}\n  </FormField>\n);\n\nFormFieldComponent.propTypes = {\n  error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),\n  label: PropTypes.string,\n  children: PropTypes.oneOfType([\n    PropTypes.array,\n    PropTypes.element,\n    PropTypes.node,\n  ]).isRequired,\n};\n\nFormFieldComponent.defaultProps = {\n  error: null,\n  label: null,\n};\n\nexport default FormFieldComponent;\n"]}]}
+{
+  "remainingRequest": "/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js?{\"presets\":[[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-preset-docz/dist/index.js\",{\"flow\":true,\"typescript\":false,\"parseProps\":true}]],\"plugins\":[],\"cacheDirectory\":true,\"babelrc\":false}!/home/ubuntu/bcredi-frontend-challenge/src/components/FormField/index.js",
+  "dependencies": [
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/src/components/FormField/index.js",
+      "mtime": 1536431985862
+    },
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/node_modules/cache-loader/dist/cjs.js",
+      "mtime": 0
+    },
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js",
+      "mtime": 499162500000
+    }
+  ],
+  "contextDependencies": [],
+  "result": [
+    "import React from 'react';\nimport { FormField, Label } from './index.styled';\nexport var FormFieldComponent = function FormFieldComponent(_ref) {\n  var label = _ref.label,\n      error = _ref.error,\n      children = _ref.children;\n  return React.createElement(FormField, {\n    error: error\n  }, label && React.createElement(Label, null, label), children, error && React.createElement(\"span\", null, error));\n};\nFormFieldComponent.defaultProps = {\n  error: null,\n  label: null\n};\nexport default FormFieldComponent;\nFormFieldComponent.__docgenInfo = {\n  \"description\": \"\",\n  \"methods\": [],\n  \"displayName\": \"FormFieldComponent\",\n  \"props\": {\n    \"error\": {\n      \"defaultValue\": {\n        \"value\": \"null\",\n        \"computed\": false\n      },\n      \"type\": {\n        \"name\": \"union\",\n        \"value\": [{\n          \"name\": \"string\"\n        }, {\n          \"name\": \"bool\"\n        }]\n      },\n      \"required\": false,\n      \"description\": \"\"\n    },\n    \"label\": {\n      \"defaultValue\": {\n        \"value\": \"null\",\n        \"computed\": false\n      },\n      \"type\": {\n        \"name\": \"string\"\n      },\n      \"required\": false,\n      \"description\": \"\"\n    },\n    \"children\": {\n      \"type\": {\n        \"name\": \"union\",\n        \"value\": [{\n          \"name\": \"array\"\n        }, {\n          \"name\": \"element\"\n        }, {\n          \"name\": \"node\"\n        }]\n      },\n      \"required\": true,\n      \"description\": \"\"\n    }\n  }\n};",
+    {
+      "version": 3,
+      "sources": [
+        "/home/ubuntu/bcredi-frontend-challenge/src/components/FormField/index.js"
+      ],
+      "names": [
+        "React",
+        "FormField",
+        "Label",
+        "FormFieldComponent",
+        "label",
+        "error",
+        "children",
+        "defaultProps"
+      ],
+      "mappings": "AAAA,OAAOA,KAAP,MAAkB,OAAlB;AAGA,SAASC,SAAT,EAAoBC,KAApB,QAAiC,gBAAjC;AAEA,OAAO,IAAMC,kBAAkB,GAAG,SAArBA,kBAAqB;AAAA,MAAGC,KAAH,QAAGA,KAAH;AAAA,MAAUC,KAAV,QAAUA,KAAV;AAAA,MAAiBC,QAAjB,QAAiBA,QAAjB;AAAA,SAChC,oBAAC,SAAD;AAAW,IAAA,KAAK,EAAED;AAAlB,KACGD,KAAK,IAAI,oBAAC,KAAD,QAAQA,KAAR,CADZ,EAEGE,QAFH,EAGGD,KAAK,IAAI,kCAAOA,KAAP,CAHZ,CADgC;AAAA,CAA3B;AAkBPF,kBAAkB,CAACI,YAAnB,GAAkC;AAChCF,EAAAA,KAAK,EAAE,IADyB;AAEhCD,EAAAA,KAAK,EAAE;AAFyB,CAAlC;AAKA,eAAeD,kBAAf",
+      "sourcesContent": [
+        "import React from 'react';\nimport PropTypes from 'prop-types';\n\nimport { FormField, Label } from './index.styled';\n\nexport const FormFieldComponent = ({ label, error, children }) => (\n  <FormField error={error}>\n    {label && <Label>{label}</Label>}\n    {children}\n    {error && <span>{error}</span>}\n  </FormField>\n);\n\nFormFieldComponent.propTypes = {\n  error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),\n  label: PropTypes.string,\n  children: PropTypes.oneOfType([\n    PropTypes.array,\n    PropTypes.element,\n    PropTypes.node,\n  ]).isRequired,\n};\n\nFormFieldComponent.defaultProps = {\n  error: null,\n  label: null,\n};\n\nexport default FormFieldComponent;\n"
+      ]
+    }
+  ]
+}

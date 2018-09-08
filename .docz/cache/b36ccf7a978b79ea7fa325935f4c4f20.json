@@ -1,1 +1,41 @@
-{"remainingRequest":"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js?{\"presets\":[[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-preset-docz/dist/index.js\",{\"flow\":true,\"typescript\":false,\"parseProps\":true}]],\"plugins\":[],\"cacheDirectory\":true,\"babelrc\":false}!/home/ubuntu/bcredi-frontend-challenge/src/components/Button/index.js","dependencies":[{"path":"/home/ubuntu/bcredi-frontend-challenge/src/components/Button/index.js","mtime":1536393524791},{"path":"/home/ubuntu/bcredi-frontend-challenge/node_modules/cache-loader/dist/cjs.js","mtime":0},{"path":"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js","mtime":499162500000}],"contextDependencies":[],"result":["function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\nimport React from 'react';\nimport Button from './index.styled';\n\nvar ButtonComponent = function ButtonComponent(_ref) {\n  var type = _ref.type,\n      icon = _ref.icon,\n      children = _ref.children,\n      props = _objectWithoutProperties(_ref, [\"type\", \"icon\", \"children\"]);\n\n  return React.createElement(Button, Object.assign({\n    type: type\n  }, props), React.createElement(\"span\", null, icon && icon), children);\n};\n\nButtonComponent.defaultProps = {\n  icon: null,\n  type: 'primary'\n};\nexport default ButtonComponent;\nButtonComponent.__docgenInfo = {\n  \"description\": \"\",\n  \"methods\": [],\n  \"displayName\": \"ButtonComponent\",\n  \"props\": {\n    \"icon\": {\n      \"defaultValue\": {\n        \"value\": \"null\",\n        \"computed\": false\n      },\n      \"type\": {\n        \"name\": \"object\"\n      },\n      \"required\": false,\n      \"description\": \"\"\n    },\n    \"type\": {\n      \"defaultValue\": {\n        \"value\": \"'primary'\",\n        \"computed\": false\n      },\n      \"type\": {\n        \"name\": \"string\"\n      },\n      \"required\": false,\n      \"description\": \"\"\n    }\n  }\n};",{"version":3,"sources":["/home/ubuntu/bcredi-frontend-challenge/src/components/Button/index.js"],"names":["React","Button","ButtonComponent","type","icon","children","props","defaultProps"],"mappings":";;;;AAAA,OAAOA,KAAP,MAAkB,OAAlB;AAGA,OAAOC,MAAP,MAAmB,gBAAnB;;AAEA,IAAMC,eAAe,GAAG,SAAlBA,eAAkB;AAAA,MAAGC,IAAH,QAAGA,IAAH;AAAA,MAASC,IAAT,QAASA,IAAT;AAAA,MAAeC,QAAf,QAAeA,QAAf;AAAA,MAA4BC,KAA5B;;AAAA,SACtB,oBAAC,MAAD;AAAQ,IAAA,IAAI,EAAEH;AAAd,KAAwBG,KAAxB,GACE,kCAAOF,IAAI,IAAIA,IAAf,CADF,EAEGC,QAFH,CADsB;AAAA,CAAxB;;AAYAH,eAAe,CAACK,YAAhB,GAA+B;AAC7BH,EAAAA,IAAI,EAAE,IADuB;AAE7BD,EAAAA,IAAI,EAAE;AAFuB,CAA/B;AAKA,eAAeD,eAAf","sourcesContent":["import React from 'react';\nimport PropTypes from 'prop-types';\n\nimport Button from './index.styled';\n\nconst ButtonComponent = ({ type, icon, children, ...props }) => (\n  <Button type={type} {...props}>\n    <span>{icon && icon}</span>\n    {children}\n  </Button>\n);\n\nButtonComponent.propTypes = {\n  type: PropTypes.string,\n  icon: PropTypes.object,\n};\n\nButtonComponent.defaultProps = {\n  icon: null,\n  type: 'primary',\n};\n\nexport default ButtonComponent;\n"]}]}
+{
+  "remainingRequest": "/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js?{\"presets\":[[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-preset-docz/dist/index.js\",{\"flow\":true,\"typescript\":false,\"parseProps\":true}]],\"plugins\":[],\"cacheDirectory\":true,\"babelrc\":false}!/home/ubuntu/bcredi-frontend-challenge/src/components/Button/index.js",
+  "dependencies": [
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/src/components/Button/index.js",
+      "mtime": 1536393524791
+    },
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/node_modules/cache-loader/dist/cjs.js",
+      "mtime": 0
+    },
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js",
+      "mtime": 499162500000
+    }
+  ],
+  "contextDependencies": [],
+  "result": [
+    "function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\nimport React from 'react';\nimport Button from './index.styled';\n\nvar ButtonComponent = function ButtonComponent(_ref) {\n  var type = _ref.type,\n      icon = _ref.icon,\n      children = _ref.children,\n      props = _objectWithoutProperties(_ref, [\"type\", \"icon\", \"children\"]);\n\n  return React.createElement(Button, Object.assign({\n    type: type\n  }, props), React.createElement(\"span\", null, icon && icon), children);\n};\n\nButtonComponent.defaultProps = {\n  icon: null,\n  type: 'primary'\n};\nexport default ButtonComponent;\nButtonComponent.__docgenInfo = {\n  \"description\": \"\",\n  \"methods\": [],\n  \"displayName\": \"ButtonComponent\",\n  \"props\": {\n    \"icon\": {\n      \"defaultValue\": {\n        \"value\": \"null\",\n        \"computed\": false\n      },\n      \"type\": {\n        \"name\": \"object\"\n      },\n      \"required\": false,\n      \"description\": \"\"\n    },\n    \"type\": {\n      \"defaultValue\": {\n        \"value\": \"'primary'\",\n        \"computed\": false\n      },\n      \"type\": {\n        \"name\": \"string\"\n      },\n      \"required\": false,\n      \"description\": \"\"\n    }\n  }\n};",
+    {
+      "version": 3,
+      "sources": [
+        "/home/ubuntu/bcredi-frontend-challenge/src/components/Button/index.js"
+      ],
+      "names": [
+        "React",
+        "Button",
+        "ButtonComponent",
+        "type",
+        "icon",
+        "children",
+        "props",
+        "defaultProps"
+      ],
+      "mappings": ";;;;AAAA,OAAOA,KAAP,MAAkB,OAAlB;AAGA,OAAOC,MAAP,MAAmB,gBAAnB;;AAEA,IAAMC,eAAe,GAAG,SAAlBA,eAAkB;AAAA,MAAGC,IAAH,QAAGA,IAAH;AAAA,MAASC,IAAT,QAASA,IAAT;AAAA,MAAeC,QAAf,QAAeA,QAAf;AAAA,MAA4BC,KAA5B;;AAAA,SACtB,oBAAC,MAAD;AAAQ,IAAA,IAAI,EAAEH;AAAd,KAAwBG,KAAxB,GACE,kCAAOF,IAAI,IAAIA,IAAf,CADF,EAEGC,QAFH,CADsB;AAAA,CAAxB;;AAYAH,eAAe,CAACK,YAAhB,GAA+B;AAC7BH,EAAAA,IAAI,EAAE,IADuB;AAE7BD,EAAAA,IAAI,EAAE;AAFuB,CAA/B;AAKA,eAAeD,eAAf",
+      "sourcesContent": [
+        "import React from 'react';\nimport PropTypes from 'prop-types';\n\nimport Button from './index.styled';\n\nconst ButtonComponent = ({ type, icon, children, ...props }) => (\n  <Button type={type} {...props}>\n    <span>{icon && icon}</span>\n    {children}\n  </Button>\n);\n\nButtonComponent.propTypes = {\n  type: PropTypes.string,\n  icon: PropTypes.object,\n};\n\nButtonComponent.defaultProps = {\n  icon: null,\n  type: 'primary',\n};\n\nexport default ButtonComponent;\n"
+      ]
+    }
+  ]
+}

@@ -7,9 +7,7 @@
     "version": "0.1.0",
     "repository": null,
     "wrapper": "src/utils/theme-wrapper",
-    "plugins": [
-      {}
-    ]
+    "plugins": [{}]
   },
   "entries": {
     "src/components/Button/index.mdx": {

@@ -11,4 +11,4 @@ export const imports = {
     import(/* webpackPrefetch: true, webpackChunkName: "src-components-side-image-index" */ 'src/components/SideImage/index.mdx'),
   'src/components/Toaster/index.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "src-components-toaster-index" */ 'src/components/Toaster/index.mdx'),
-}
+};

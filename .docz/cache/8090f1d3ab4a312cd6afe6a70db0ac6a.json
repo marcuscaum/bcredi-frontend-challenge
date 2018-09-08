@@ -1,1 +1,30 @@
-{"remainingRequest":"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js?{\"presets\":[[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-preset-docz/dist/index.js\",{\"flow\":true,\"typescript\":false,\"parseProps\":true}]],\"plugins\":[],\"cacheDirectory\":true,\"babelrc\":false}!/home/ubuntu/bcredi-frontend-challenge/src/utils/theme.js","dependencies":[{"path":"/home/ubuntu/bcredi-frontend-challenge/src/utils/theme.js","mtime":1536394216571},{"path":"/home/ubuntu/bcredi-frontend-challenge/node_modules/cache-loader/dist/cjs.js","mtime":0},{"path":"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js","mtime":499162500000}],"contextDependencies":[],"result":["export default {\n  primary: '#4c8afe',\n  lightGray: '#8f8f8f',\n  ultraLightGray: '#e6e6e6',\n  destructive: '#ff5863'\n};",{"version":3,"sources":["/home/ubuntu/bcredi-frontend-challenge/src/utils/theme.js"],"names":["primary","lightGray","ultraLightGray","destructive"],"mappings":"AAAA,eAAe;AACbA,EAAAA,OAAO,EAAE,SADI;AAEbC,EAAAA,SAAS,EAAE,SAFE;AAGbC,EAAAA,cAAc,EAAE,SAHH;AAIbC,EAAAA,WAAW,EAAE;AAJA,CAAf","sourcesContent":["export default {\n  primary: '#4c8afe',\n  lightGray: '#8f8f8f',\n  ultraLightGray: '#e6e6e6',\n  destructive: '#ff5863',\n};\n"]}]}
+{
+  "remainingRequest": "/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js?{\"presets\":[[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-preset-docz/dist/index.js\",{\"flow\":true,\"typescript\":false,\"parseProps\":true}]],\"plugins\":[],\"cacheDirectory\":true,\"babelrc\":false}!/home/ubuntu/bcredi-frontend-challenge/src/utils/theme.js",
+  "dependencies": [
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/src/utils/theme.js",
+      "mtime": 1536394216571
+    },
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/node_modules/cache-loader/dist/cjs.js",
+      "mtime": 0
+    },
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js",
+      "mtime": 499162500000
+    }
+  ],
+  "contextDependencies": [],
+  "result": [
+    "export default {\n  primary: '#4c8afe',\n  lightGray: '#8f8f8f',\n  ultraLightGray: '#e6e6e6',\n  destructive: '#ff5863'\n};",
+    {
+      "version": 3,
+      "sources": ["/home/ubuntu/bcredi-frontend-challenge/src/utils/theme.js"],
+      "names": ["primary", "lightGray", "ultraLightGray", "destructive"],
+      "mappings": "AAAA,eAAe;AACbA,EAAAA,OAAO,EAAE,SADI;AAEbC,EAAAA,SAAS,EAAE,SAFE;AAGbC,EAAAA,cAAc,EAAE,SAHH;AAIbC,EAAAA,WAAW,EAAE;AAJA,CAAf",
+      "sourcesContent": [
+        "export default {\n  primary: '#4c8afe',\n  lightGray: '#8f8f8f',\n  ultraLightGray: '#e6e6e6',\n  destructive: '#ff5863',\n};\n"
+      ]
+    }
+  ]
+}

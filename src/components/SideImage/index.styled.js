@@ -42,7 +42,7 @@ export const MessageAuthor = styled.p`
 export const SideImage = styled.div`
   display: flex;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 550px;
   background-size: cover;
   background-position: center center;
