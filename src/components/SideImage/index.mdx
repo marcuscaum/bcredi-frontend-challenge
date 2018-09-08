@@ -1,0 +1,27 @@
+---
+name: SideImage
+---
+
+
+import { Playground, PropsTable } from 'docz'
+import SideImage from './index'
+import MainLogo from '../../assets/logo.svg';
+
+# SideImage
+
+<PropsTable of={SideImage} />
+
+## Basic usage
+
+<Playground>
+  <SideImage
+    messageAuthor={
+      <React.Fragment>
+        <strong>Camila Bragança,</strong>
+        <br />
+        Sideral Tecnologia
+      </React.Fragment>
+    }
+    message="Obtive crédito para capital de giro. O processo foi bem sucedido e tudo que foi abordado, foi cumprido."
+  />
+</Playground>

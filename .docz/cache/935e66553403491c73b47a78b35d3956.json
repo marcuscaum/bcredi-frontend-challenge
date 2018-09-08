@@ -1,1 +1,32 @@
-{"remainingRequest":"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js?{\"presets\":[[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-preset-docz/dist/index.js\",{\"flow\":true,\"typescript\":false,\"parseProps\":true}]],\"plugins\":[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/react-hot-loader/babel.js\"],\"cacheDirectory\":true,\"babelrc\":false}!/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.js","dependencies":[{"path":"/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.js","mtime":1536309683534},{"path":"/home/ubuntu/bcredi-frontend-challenge/node_modules/cache-loader/dist/cjs.js","mtime":0},{"path":"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js","mtime":499162500000}],"contextDependencies":[],"result":["var _jsxFileName = \"/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.js\";\n\n(function () {\n  var enterModule = require('react-hot-loader').enterModule;\n\n  enterModule && enterModule(module);\n})();\n\nimport React from 'react';\nimport MainLogo from 'assets/logo.svg';\nimport NavBar from './index.styled';\n\nvar NavBarComponent = function NavBarComponent() {\n  return React.createElement(NavBar, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7\n    },\n    __self: this\n  }, React.createElement(\"img\", {\n    src: MainLogo,\n    alt: \"\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 8\n    },\n    __self: this\n  }));\n};\n\nvar _default = NavBarComponent;\nexport default _default;\n;\n\n(function () {\n  var reactHotLoader = require('react-hot-loader').default;\n\n  var leaveModule = require('react-hot-loader').leaveModule;\n\n  if (!reactHotLoader) {\n    return;\n  }\n\n  reactHotLoader.register(NavBarComponent, \"NavBarComponent\", \"/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.js\");\n  reactHotLoader.register(_default, \"default\", \"/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.js\");\n  leaveModule(module);\n})();\n\n;\nNavBarComponent.__docgenInfo = {\n  \"description\": \"\",\n  \"methods\": [],\n  \"displayName\": \"NavBarComponent\"\n};",{"version":3,"sources":["/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.js"],"names":["React","MainLogo","NavBar","NavBarComponent"],"mappings":";;;;;;;;AAAA,OAAOA,KAAP,MAAkB,OAAlB;AAEA,OAAOC,QAAP,MAAqB,iBAArB;AACA,OAAOC,MAAP,MAAmB,gBAAnB;;AAEA,IAAMC,eAAe,GAAG,SAAlBA,eAAkB;AAAA,SACtB,oBAAC,MAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE;AAAK,IAAA,GAAG,EAAEF,QAAV;AAAoB,IAAA,GAAG,EAAC,EAAxB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IADF,CADsB;AAAA,CAAxB;;eAMeE,e;AAAf;;;;;;;;;;;;0BANMA,e","sourcesContent":["import React from 'react';\n\nimport MainLogo from 'assets/logo.svg';\nimport NavBar from './index.styled';\n\nconst NavBarComponent = () => (\n  <NavBar>\n    <img src={MainLogo} alt=\"\" />\n  </NavBar>\n);\n\nexport default NavBarComponent;\n"]}]}
+{
+  "remainingRequest": "/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js?{\"presets\":[[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-preset-docz/dist/index.js\",{\"flow\":true,\"typescript\":false,\"parseProps\":true}]],\"plugins\":[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/react-hot-loader/babel.js\"],\"cacheDirectory\":true,\"babelrc\":false}!/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.js",
+  "dependencies": [
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.js",
+      "mtime": 1536309683534
+    },
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/node_modules/cache-loader/dist/cjs.js",
+      "mtime": 0
+    },
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js",
+      "mtime": 499162500000
+    }
+  ],
+  "contextDependencies": [],
+  "result": [
+    "var _jsxFileName = \"/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.js\";\n\n(function () {\n  var enterModule = require('react-hot-loader').enterModule;\n\n  enterModule && enterModule(module);\n})();\n\nimport React from 'react';\nimport MainLogo from 'assets/logo.svg';\nimport NavBar from './index.styled';\n\nvar NavBarComponent = function NavBarComponent() {\n  return React.createElement(NavBar, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7\n    },\n    __self: this\n  }, React.createElement(\"img\", {\n    src: MainLogo,\n    alt: \"\",\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 8\n    },\n    __self: this\n  }));\n};\n\nvar _default = NavBarComponent;\nexport default _default;\n;\n\n(function () {\n  var reactHotLoader = require('react-hot-loader').default;\n\n  var leaveModule = require('react-hot-loader').leaveModule;\n\n  if (!reactHotLoader) {\n    return;\n  }\n\n  reactHotLoader.register(NavBarComponent, \"NavBarComponent\", \"/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.js\");\n  reactHotLoader.register(_default, \"default\", \"/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.js\");\n  leaveModule(module);\n})();\n\n;\nNavBarComponent.__docgenInfo = {\n  \"description\": \"\",\n  \"methods\": [],\n  \"displayName\": \"NavBarComponent\"\n};",
+    {
+      "version": 3,
+      "sources": [
+        "/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.js"
+      ],
+      "names": ["React", "MainLogo", "NavBar", "NavBarComponent"],
+      "mappings": ";;;;;;;;AAAA,OAAOA,KAAP,MAAkB,OAAlB;AAEA,OAAOC,QAAP,MAAqB,iBAArB;AACA,OAAOC,MAAP,MAAmB,gBAAnB;;AAEA,IAAMC,eAAe,GAAG,SAAlBA,eAAkB;AAAA,SACtB,oBAAC,MAAD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KACE;AAAK,IAAA,GAAG,EAAEF,QAAV;AAAoB,IAAA,GAAG,EAAC,EAAxB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IADF,CADsB;AAAA,CAAxB;;eAMeE,e;AAAf;;;;;;;;;;;;0BANMA,e",
+      "sourcesContent": [
+        "import React from 'react';\n\nimport MainLogo from 'assets/logo.svg';\nimport NavBar from './index.styled';\n\nconst NavBarComponent = () => (\n  <NavBar>\n    <img src={MainLogo} alt=\"\" />\n  </NavBar>\n);\n\nexport default NavBarComponent;\n"
+      ]
+    }
+  ]
+}

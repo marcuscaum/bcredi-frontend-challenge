@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import SignUpImage from 'assets/signup_page_image.png';
+import SignUpImage from '../../assets/signup_page_image.png';
 
 export const MessageContainer = styled.div`
   display: flex;

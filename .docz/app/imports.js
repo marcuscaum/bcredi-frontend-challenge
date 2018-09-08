@@ -7,4 +7,6 @@ export const imports = {
     import(/* webpackPrefetch: true, webpackChunkName: "src-components-form-field-index" */ 'src/components/FormField/index.mdx'),
   'src/components/NavBar/index.mdx': () =>
     import(/* webpackPrefetch: true, webpackChunkName: "src-components-nav-bar-index" */ 'src/components/NavBar/index.mdx'),
+  'src/components/SideImage/index.mdx': () =>
+    import(/* webpackPrefetch: true, webpackChunkName: "src-components-side-image-index" */ 'src/components/SideImage/index.mdx'),
 }

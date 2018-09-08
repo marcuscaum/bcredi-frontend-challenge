@@ -1,1 +1,32 @@
-{"remainingRequest":"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js?{\"presets\":[[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-preset-docz/dist/index.js\",{\"flow\":true,\"typescript\":false,\"parseProps\":true}]],\"plugins\":[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/react-hot-loader/babel.js\"],\"cacheDirectory\":true,\"babelrc\":false}!/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.styled.js","dependencies":[{"path":"/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.styled.js","mtime":1536309683534},{"path":"/home/ubuntu/bcredi-frontend-challenge/node_modules/cache-loader/dist/cjs.js","mtime":0},{"path":"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js","mtime":499162500000}],"contextDependencies":[],"result":["(function () {\n  var enterModule = require('react-hot-loader').enterModule;\n\n  enterModule && enterModule(module);\n})();\n\nfunction _templateObject() {\n  var data = _taggedTemplateLiteral([\"\\n  padding: 16px 32px;\\n  display: flex;\\n  justify-content: flex-end; /* align horizontal */\\n\\n  > * {\\n    display: flex;\\n  }\\n\"]);\n\n  _templateObject = function _templateObject() {\n    return data;\n  };\n\n  return data;\n}\n\nfunction _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nimport styled from 'styled-components';\nvar NavBar = styled.div(_templateObject());\nvar _default = NavBar;\nexport default _default;\n;\n\n(function () {\n  var reactHotLoader = require('react-hot-loader').default;\n\n  var leaveModule = require('react-hot-loader').leaveModule;\n\n  if (!reactHotLoader) {\n    return;\n  }\n\n  reactHotLoader.register(NavBar, \"NavBar\", \"/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.styled.js\");\n  reactHotLoader.register(_default, \"default\", \"/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.styled.js\");\n  leaveModule(module);\n})();\n\n;",{"version":3,"sources":["/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.styled.js"],"names":["styled","NavBar","div"],"mappings":";;;;;;;;;;;;;;;;;;AAAA,OAAOA,MAAP,MAAmB,mBAAnB;AAEA,IAAMC,MAAM,GAAGD,MAAM,CAACE,GAAV,mBAAZ;eAUeD,M;AAAf;;;;;;;;;;;;0BAVMA,M","sourcesContent":["import styled from 'styled-components';\n\nconst NavBar = styled.div`\n  padding: 16px 32px;\n  display: flex;\n  justify-content: flex-end; /* align horizontal */\n\n  > * {\n    display: flex;\n  }\n`;\n\nexport default NavBar;\n"]}]}
+{
+  "remainingRequest": "/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js?{\"presets\":[[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-preset-docz/dist/index.js\",{\"flow\":true,\"typescript\":false,\"parseProps\":true}]],\"plugins\":[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/react-hot-loader/babel.js\"],\"cacheDirectory\":true,\"babelrc\":false}!/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.styled.js",
+  "dependencies": [
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.styled.js",
+      "mtime": 1536309683534
+    },
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/node_modules/cache-loader/dist/cjs.js",
+      "mtime": 0
+    },
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js",
+      "mtime": 499162500000
+    }
+  ],
+  "contextDependencies": [],
+  "result": [
+    "(function () {\n  var enterModule = require('react-hot-loader').enterModule;\n\n  enterModule && enterModule(module);\n})();\n\nfunction _templateObject() {\n  var data = _taggedTemplateLiteral([\"\\n  padding: 16px 32px;\\n  display: flex;\\n  justify-content: flex-end; /* align horizontal */\\n\\n  > * {\\n    display: flex;\\n  }\\n\"]);\n\n  _templateObject = function _templateObject() {\n    return data;\n  };\n\n  return data;\n}\n\nfunction _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nimport styled from 'styled-components';\nvar NavBar = styled.div(_templateObject());\nvar _default = NavBar;\nexport default _default;\n;\n\n(function () {\n  var reactHotLoader = require('react-hot-loader').default;\n\n  var leaveModule = require('react-hot-loader').leaveModule;\n\n  if (!reactHotLoader) {\n    return;\n  }\n\n  reactHotLoader.register(NavBar, \"NavBar\", \"/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.styled.js\");\n  reactHotLoader.register(_default, \"default\", \"/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.styled.js\");\n  leaveModule(module);\n})();\n\n;",
+    {
+      "version": 3,
+      "sources": [
+        "/home/ubuntu/bcredi-frontend-challenge/src/components/NavBar/index.styled.js"
+      ],
+      "names": ["styled", "NavBar", "div"],
+      "mappings": ";;;;;;;;;;;;;;;;;;AAAA,OAAOA,MAAP,MAAmB,mBAAnB;AAEA,IAAMC,MAAM,GAAGD,MAAM,CAACE,GAAV,mBAAZ;eAUeD,M;AAAf;;;;;;;;;;;;0BAVMA,M",
+      "sourcesContent": [
+        "import styled from 'styled-components';\n\nconst NavBar = styled.div`\n  padding: 16px 32px;\n  display: flex;\n  justify-content: flex-end; /* align horizontal */\n\n  > * {\n    display: flex;\n  }\n`;\n\nexport default NavBar;\n"
+      ]
+    }
+  ]
+}
