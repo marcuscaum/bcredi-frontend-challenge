@@ -131,7 +131,6 @@ export const SignUpFormComponent = ({
         />
       </FormField>
       <Button
-        type="primary"
         icon={<img src={PadlockIcon} alt="" />}
         onClick={saveUser}
         disabled={isEmpty(omitBy(formValues, isEmpty))}

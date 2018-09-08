@@ -11,12 +11,13 @@ const ButtonComponent = ({ type, icon, children, ...props }) => (
 );
 
 ButtonComponent.propTypes = {
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
   icon: PropTypes.object,
 };
 
 ButtonComponent.defaultProps = {
   icon: null,
+  type: 'primary',
 };
 
 export default ButtonComponent;

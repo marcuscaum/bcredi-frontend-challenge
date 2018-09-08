@@ -1,0 +1,35 @@
+{
+  "config": {
+    "title": "Bcredi Frontend Challenge",
+    "description": "My awesome app using docz",
+    "themeConfig": {},
+    "ordering": "descending",
+    "version": "0.1.0",
+    "repository": null,
+    "wrapper": "src/utils/theme-wrapper"
+  },
+  "entries": {
+    "src/components/Button/index.mdx": {
+      "name": "Button",
+      "id": "a08e664b64d63394cab05b2e5d624522",
+      "filepath": "src/components/Button/index.mdx",
+      "link": null,
+      "slug": "src-components-button-index",
+      "route": "/src-components-button-index",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "button",
+          "value": "Button"
+        },
+        {
+          "depth": 2,
+          "slug": "basic-usage",
+          "value": "Basic usage"
+        }
+      ]
+    }
+  }
+}
