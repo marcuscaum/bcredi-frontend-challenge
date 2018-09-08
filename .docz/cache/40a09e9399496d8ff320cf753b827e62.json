@@ -1,1 +1,42 @@
-{"remainingRequest":"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js?{\"presets\":[[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-preset-docz/dist/index.js\",{\"flow\":true,\"typescript\":false,\"parseProps\":true}]],\"plugins\":[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/react-hot-loader/babel.js\"],\"cacheDirectory\":true,\"babelrc\":false}!/home/ubuntu/bcredi-frontend-challenge/src/utils/theme-wrapper.js","dependencies":[{"path":"/home/ubuntu/bcredi-frontend-challenge/src/utils/theme-wrapper.js","mtime":1536394304195},{"path":"/home/ubuntu/bcredi-frontend-challenge/node_modules/cache-loader/dist/cjs.js","mtime":0},{"path":"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js","mtime":499162500000}],"contextDependencies":[],"result":["var _jsxFileName = \"/home/ubuntu/bcredi-frontend-challenge/src/utils/theme-wrapper.js\";\n\n(function () {\n  var enterModule = require('react-hot-loader').enterModule;\n\n  enterModule && enterModule(module);\n})();\n\nimport React from 'react';\nimport PropTypes from 'prop-types';\nimport { ThemeProvider } from 'styled-components';\nimport defaultTheme from './theme';\n\nvar ThemeWrapper = function ThemeWrapper(_ref) {\n  var children = _ref.children;\n  return React.createElement(ThemeProvider, {\n    theme: defaultTheme,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7\n    },\n    __self: this\n  }, children);\n};\n\nThemeWrapper.propTypes = {\n  children: PropTypes.element.isRequired\n};\nvar _default = ThemeWrapper;\nexport default _default;\n;\n\n(function () {\n  var reactHotLoader = require('react-hot-loader').default;\n\n  var leaveModule = require('react-hot-loader').leaveModule;\n\n  if (!reactHotLoader) {\n    return;\n  }\n\n  reactHotLoader.register(ThemeWrapper, \"ThemeWrapper\", \"/home/ubuntu/bcredi-frontend-challenge/src/utils/theme-wrapper.js\");\n  reactHotLoader.register(_default, \"default\", \"/home/ubuntu/bcredi-frontend-challenge/src/utils/theme-wrapper.js\");\n  leaveModule(module);\n})();\n\n;\nThemeWrapper.__docgenInfo = {\n  \"description\": \"\",\n  \"methods\": [],\n  \"displayName\": \"ThemeWrapper\",\n  \"props\": {\n    \"children\": {\n      \"type\": {\n        \"name\": \"element\"\n      },\n      \"required\": true,\n      \"description\": \"\"\n    }\n  }\n};",{"version":3,"sources":["/home/ubuntu/bcredi-frontend-challenge/src/utils/theme-wrapper.js"],"names":["React","PropTypes","ThemeProvider","defaultTheme","ThemeWrapper","children","propTypes","element","isRequired"],"mappings":";;;;;;;;AAAA,OAAOA,KAAP,MAAkB,OAAlB;AACA,OAAOC,SAAP,MAAsB,YAAtB;AACA,SAASC,aAAT,QAA8B,mBAA9B;AACA,OAAOC,YAAP,MAAyB,SAAzB;;AAEA,IAAMC,YAAY,GAAG,SAAfA,YAAe;AAAA,MAAGC,QAAH,QAAGA,QAAH;AAAA,SACnB,oBAAC,aAAD;AAAe,IAAA,KAAK,EAAEF,YAAtB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KAAqCE,QAArC,CADmB;AAAA,CAArB;;AAIAD,YAAY,CAACE,SAAb,GAAyB;AACvBD,EAAAA,QAAQ,EAAEJ,SAAS,CAACM,OAAV,CAAkBC;AADL,CAAzB;eAIeJ,Y;AAAf;;;;;;;;;;;;0BARMA,Y","sourcesContent":["import React from 'react';\nimport PropTypes from 'prop-types';\nimport { ThemeProvider } from 'styled-components';\nimport defaultTheme from './theme';\n\nconst ThemeWrapper = ({ children }) => (\n  <ThemeProvider theme={defaultTheme}>{children}</ThemeProvider>\n);\n\nThemeWrapper.propTypes = {\n  children: PropTypes.element.isRequired,\n};\n\nexport default ThemeWrapper;\n"]}]}
+{
+  "remainingRequest": "/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js?{\"presets\":[[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-preset-docz/dist/index.js\",{\"flow\":true,\"typescript\":false,\"parseProps\":true}]],\"plugins\":[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/react-hot-loader/babel.js\"],\"cacheDirectory\":true,\"babelrc\":false}!/home/ubuntu/bcredi-frontend-challenge/src/utils/theme-wrapper.js",
+  "dependencies": [
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/src/utils/theme-wrapper.js",
+      "mtime": 1536394304195
+    },
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/node_modules/cache-loader/dist/cjs.js",
+      "mtime": 0
+    },
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js",
+      "mtime": 499162500000
+    }
+  ],
+  "contextDependencies": [],
+  "result": [
+    "var _jsxFileName = \"/home/ubuntu/bcredi-frontend-challenge/src/utils/theme-wrapper.js\";\n\n(function () {\n  var enterModule = require('react-hot-loader').enterModule;\n\n  enterModule && enterModule(module);\n})();\n\nimport React from 'react';\nimport PropTypes from 'prop-types';\nimport { ThemeProvider } from 'styled-components';\nimport defaultTheme from './theme';\n\nvar ThemeWrapper = function ThemeWrapper(_ref) {\n  var children = _ref.children;\n  return React.createElement(ThemeProvider, {\n    theme: defaultTheme,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 7\n    },\n    __self: this\n  }, children);\n};\n\nThemeWrapper.propTypes = {\n  children: PropTypes.element.isRequired\n};\nvar _default = ThemeWrapper;\nexport default _default;\n;\n\n(function () {\n  var reactHotLoader = require('react-hot-loader').default;\n\n  var leaveModule = require('react-hot-loader').leaveModule;\n\n  if (!reactHotLoader) {\n    return;\n  }\n\n  reactHotLoader.register(ThemeWrapper, \"ThemeWrapper\", \"/home/ubuntu/bcredi-frontend-challenge/src/utils/theme-wrapper.js\");\n  reactHotLoader.register(_default, \"default\", \"/home/ubuntu/bcredi-frontend-challenge/src/utils/theme-wrapper.js\");\n  leaveModule(module);\n})();\n\n;\nThemeWrapper.__docgenInfo = {\n  \"description\": \"\",\n  \"methods\": [],\n  \"displayName\": \"ThemeWrapper\",\n  \"props\": {\n    \"children\": {\n      \"type\": {\n        \"name\": \"element\"\n      },\n      \"required\": true,\n      \"description\": \"\"\n    }\n  }\n};",
+    {
+      "version": 3,
+      "sources": [
+        "/home/ubuntu/bcredi-frontend-challenge/src/utils/theme-wrapper.js"
+      ],
+      "names": [
+        "React",
+        "PropTypes",
+        "ThemeProvider",
+        "defaultTheme",
+        "ThemeWrapper",
+        "children",
+        "propTypes",
+        "element",
+        "isRequired"
+      ],
+      "mappings": ";;;;;;;;AAAA,OAAOA,KAAP,MAAkB,OAAlB;AACA,OAAOC,SAAP,MAAsB,YAAtB;AACA,SAASC,aAAT,QAA8B,mBAA9B;AACA,OAAOC,YAAP,MAAyB,SAAzB;;AAEA,IAAMC,YAAY,GAAG,SAAfA,YAAe;AAAA,MAAGC,QAAH,QAAGA,QAAH;AAAA,SACnB,oBAAC,aAAD;AAAe,IAAA,KAAK,EAAEF,YAAtB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KAAqCE,QAArC,CADmB;AAAA,CAArB;;AAIAD,YAAY,CAACE,SAAb,GAAyB;AACvBD,EAAAA,QAAQ,EAAEJ,SAAS,CAACM,OAAV,CAAkBC;AADL,CAAzB;eAIeJ,Y;AAAf;;;;;;;;;;;;0BARMA,Y",
+      "sourcesContent": [
+        "import React from 'react';\nimport PropTypes from 'prop-types';\nimport { ThemeProvider } from 'styled-components';\nimport defaultTheme from './theme';\n\nconst ThemeWrapper = ({ children }) => (\n  <ThemeProvider theme={defaultTheme}>{children}</ThemeProvider>\n);\n\nThemeWrapper.propTypes = {\n  children: PropTypes.element.isRequired,\n};\n\nexport default ThemeWrapper;\n"
+      ]
+    }
+  ]
+}
