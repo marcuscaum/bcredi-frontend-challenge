@@ -47,6 +47,8 @@ export default {
       }
     }
 
+    console.log(formValues);
+
     return toast('Parabéns! Cadastro realizado com sucesso!', {
       position: toast.POSITION.TOP_CENTER,
     });

@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStateHandlers } from 'recompose';
+import MaskedInput from 'react-maskedinput';
+import MediaQuery from 'react-responsive';
 
 import isEmpty from 'lodash.isempty';
 import omitBy from 'lodash.omitby';
@@ -62,7 +64,9 @@ export const SignUpFormComponent = ({
       </FormField>
       <FormSection>
         <FormField label="CPF">
-          <input
+          <MaskedInput
+            mask="111.111.111-11"
+            size="0"
             type="text"
             name="cpf"
             placeholder="998.767.888-70"
@@ -70,12 +74,24 @@ export const SignUpFormComponent = ({
           />
         </FormField>
         <FormField label="Data de nascimento">
-          <input
-            type="text"
-            name="date_of_birth"
-            placeholder="21/12/1990"
-            onChange={onChangeInputValue}
-          />
+          <MediaQuery minDeviceWidth={700}>
+            <MaskedInput
+              mask="11/11/1111"
+              size="0"
+              type="text"
+              name="date_of_birth"
+              placeholder="21/12/1990"
+              onChange={onChangeInputValue}
+            />
+          </MediaQuery>
+          <MediaQuery maxDeviceWidth={700}>
+            <input
+              type="date"
+              name="date_of_birth"
+              placeholder="21/12/1990"
+              onChange={onChangeInputValue}
+            />
+          </MediaQuery>
         </FormField>
       </FormSection>
       <FormField
