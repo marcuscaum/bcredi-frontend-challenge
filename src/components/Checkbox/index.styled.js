@@ -3,7 +3,7 @@ import CheckImage from 'assets/check.svg';
 
 export const CheckboxLabel = styled.label`
   font-size: ${({ fontSize }) => fontSize};
-  color: ${({ color }) => color};
+  color: ${({ fontColor }) => fontColor};
   line-height: 1.67;
   cursor: pointer;
   overflow-wrap: normal;

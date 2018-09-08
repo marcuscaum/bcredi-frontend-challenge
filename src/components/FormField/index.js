@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { FormField, Label } from './index.styled';
 
-const FormFieldComponent = ({ label, error, children }) => (
+export const FormFieldComponent = ({ label, error, children }) => (
   <FormField error={error}>
     {label && <Label>{label}</Label>}
     {children}
@@ -14,7 +14,7 @@ const FormFieldComponent = ({ label, error, children }) => (
 FormFieldComponent.propTypes = {
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   label: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.element.isRequired,
 };
 
 FormFieldComponent.defaultProps = {

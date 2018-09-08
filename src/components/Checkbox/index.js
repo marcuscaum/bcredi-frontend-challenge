@@ -7,11 +7,11 @@ import {
   CheckboxLabel,
 } from './index.styled';
 
-const CheckBoxComponent = ({ label, name, fontSize, color, ...props }) => (
+const CheckBoxComponent = ({ label, name, fontSize, fontColor, ...props }) => (
   <CheckboxContainer>
     <CheckboxInput name={name} id={`${name}-input-checkbox`} {...props} />
     <CheckboxLabel
-      color={color}
+      fontColor={fontColor}
       fontSize={fontSize}
       htmlFor={`${name}-input-checkbox`}
     >
@@ -23,8 +23,13 @@ const CheckBoxComponent = ({ label, name, fontSize, color, ...props }) => (
 CheckBoxComponent.propTypes = {
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   name: PropTypes.string.isRequired,
-  fontSize: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
+  fontColor: PropTypes.string,
+  fontSize: PropTypes.string,
+};
+
+CheckBoxComponent.defaultProps = {
+  fontSize: '12px',
+  fontColor: '#cccccc',
 };
 
 export default CheckBoxComponent;

@@ -119,8 +119,6 @@ export const SignUpFormComponent = ({
         }
       >
         <Checkbox
-          fontSize="12px"
-          color="#cccccc"
           name="terms_agreement"
           onChange={onChangeInputValue}
           label={
