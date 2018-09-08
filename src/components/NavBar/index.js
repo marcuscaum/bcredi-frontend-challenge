@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MainLogo from 'assets/logo.svg';
+import MainLogo from '../../assets/logo.svg';
 import NavBar from './index.styled';
 
 const NavBarComponent = () => (
