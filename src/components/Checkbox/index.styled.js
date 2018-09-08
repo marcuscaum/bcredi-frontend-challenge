@@ -21,6 +21,7 @@ export const CheckboxLabel = styled.label`
     box-sizing: border-box;
     margin: 0 12px;
     content: '';
+    font-size: 12px;
     width: 24px;
     height: 24px;
     border-radius: 4px;
@@ -51,6 +52,7 @@ export const CheckboxContainer = styled.div`
   border: 1px solid ${({ theme: { ultraLightGray } }) => ultraLightGray};
   padding: 7px 12px;
   border-radius: 3px;
-  height: 40px;
+  height: 56px;
+  box-sizing: border-box;
   display: block;
 `;
