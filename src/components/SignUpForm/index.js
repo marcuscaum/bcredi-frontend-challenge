@@ -122,11 +122,11 @@ export const SignUpFormComponent = ({
           name="terms_agreement"
           onChange={onChangeInputValue}
           label={
-            <React.Fragment>
+            <div>
               Li e estou de acordo com a
               <a href="#to_somewhen"> Política de Privacidade </a>e a
               <a href="#to_somewhere"> Política de Uso de Informações</a>.
-            </React.Fragment>
+            </div>
           }
         />
       </FormField>

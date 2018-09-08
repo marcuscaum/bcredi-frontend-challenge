@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import CheckImage from 'assets/check.svg';
+import CheckImage from '../../assets/check.svg';
 
 export const CheckboxLabel = styled.label`
   font-size: ${({ fontSize }) => fontSize};
@@ -9,6 +9,8 @@ export const CheckboxLabel = styled.label`
   overflow-wrap: normal;
   float: left;
   margin-left: 35px;
+  align-self: center;
+  display: flex;
 
   a {
     text-decoration: none;
@@ -17,7 +19,7 @@ export const CheckboxLabel = styled.label`
 
   &::before {
     box-sizing: border-box;
-    margin: 8px 12px;
+    margin: 0 12px;
     content: '';
     width: 24px;
     height: 24px;
@@ -26,6 +28,7 @@ export const CheckboxLabel = styled.label`
     background-color: white;
     border: 1px solid #cccccc;
     left: 0;
+    top: 16px;
   }
 `;
 
@@ -46,6 +49,8 @@ export const CheckboxInput = styled.input.attrs({
 export const CheckboxContainer = styled.div`
   position: relative;
   border: 1px solid ${({ theme: { ultraLightGray } }) => ultraLightGray};
-  padding: 10px 12px;
+  padding: 7px 12px;
   border-radius: 3px;
+  height: 40px;
+  display: block;
 `;

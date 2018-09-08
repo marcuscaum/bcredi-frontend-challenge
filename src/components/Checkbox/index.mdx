@@ -6,12 +6,20 @@ name: Checkbox
 import { Playground, PropsTable } from 'docz'
 import Checkbox from './index'
 
-# Checkbox
+# Checkboxs
 
 <PropsTable of={Checkbox} />
 
-## Basic ssd
+## Basic usage
 
 <Playground>
-  <Checkbox>Click me</Checkbox>
+  <Checkbox 
+    label={
+      <div>
+        Li e estou de acordo com a
+        <a href="#to_somewhen"> Política de Privacidade </a>e a
+        <a href="#to_somewhere"> Política de Uso de Informações</a>.
+      </div>
+    }
+  />
 </Playground>
