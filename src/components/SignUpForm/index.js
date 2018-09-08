@@ -25,6 +25,7 @@ import handlers from './handlers';
 
 export const SignUpFormComponent = ({
   validatedFields,
+  validationErrorMessages,
   onChangeInputValue,
   saveUser,
   formValues,
@@ -51,12 +52,12 @@ export const SignUpFormComponent = ({
         error={
           validatedFields &&
           validatedFields.email &&
-          'O campo email é obrigatório'
+          validationErrorMessages.email
         }
       >
         <input
           validate="true"
-          type="text"
+          type="email"
           name="email"
           placeholder="Escreva seu email"
           onChange={onChangeInputValue}
@@ -99,7 +100,7 @@ export const SignUpFormComponent = ({
         error={
           validatedFields &&
           validatedFields.password &&
-          'O campo senha é obrigatório'
+          validationErrorMessages.password
         }
       >
         <input
@@ -114,7 +115,7 @@ export const SignUpFormComponent = ({
         error={
           validatedFields &&
           validatedFields.terms_agreement &&
-          'É necessário aceitar os termos'
+          validationErrorMessages.terms_agreement
         }
       >
         <Checkbox
@@ -148,6 +149,7 @@ export const SignUpFormComponent = ({
 
 SignUpFormComponent.propTypes = {
   validatedFields: PropTypes.object.isRequired,
+  validationErrorMessages: PropTypes.object.isRequired,
   formValues: PropTypes.object.isRequired,
   onChangeInputValue: PropTypes.func.isRequired,
   saveUser: PropTypes.func.isRequired,
@@ -159,6 +161,11 @@ export default withStateHandlers(
       email: false,
       password: false,
       terms_agreement: false,
+    },
+    validationErrorMessages: {
+      email: 'O campo email é obrigatório',
+      password: 'O campo senha é obrigatório',
+      terms_agreement: 'É necessário aceitar os termos',
     },
     formValues: {},
   },

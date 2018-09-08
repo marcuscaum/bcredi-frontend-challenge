@@ -25,6 +25,11 @@ ShallowWrapper {
         "password": false,
         "terms_agreement": false,
       },
+      "validationErrorMessages": Object {
+        "email": "O campo email é obrigatório",
+        "password": "O campo senha é obrigatório",
+        "terms_agreement": "É necessário aceitar os termos",
+      },
     },
     "ref": null,
     "rendered": null,
@@ -43,6 +48,11 @@ ShallowWrapper {
           "email": false,
           "password": false,
           "terms_agreement": false,
+        },
+        "validationErrorMessages": Object {
+          "email": "O campo email é obrigatório",
+          "password": "O campo senha é obrigatório",
+          "terms_agreement": "É necessário aceitar os termos",
         },
       },
       "ref": null,
