@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import SignUpPage from './index';
+import SignUpPage from '.';
 
 const setup = props => shallow(<SignUpPage {...props} />);
 

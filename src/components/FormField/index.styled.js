@@ -4,6 +4,7 @@ export const FormField = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 35px;
+  height: 70px;
   min-width: 0;
 
   input {

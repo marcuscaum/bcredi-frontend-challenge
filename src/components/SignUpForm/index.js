@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStateHandlers } from 'recompose';
+import isEmpty from 'lodash.isempty';
+import omitBy from 'lodash.omitby';
+import has from 'lodash.has';
 
 import FormField from 'components/FormField';
 import Button from 'components/Button';
@@ -16,7 +19,12 @@ import {
   FormFooter,
 } from './index.styled';
 
-const SignUpFormComponent = ({ validation, onChangeInputValue, saveUser }) => (
+export const SignUpFormComponent = ({
+  validatedFields,
+  onChangeInputValue,
+  saveUser,
+  formValues,
+}) => (
   <SignUpForm>
     <FormHeader>
       <h1>Criar meu cadastro</h1>
@@ -27,13 +35,23 @@ const SignUpFormComponent = ({ validation, onChangeInputValue, saveUser }) => (
     </FormHeader>
     <Form>
       <FormField label="Nome completo" name="name">
-        <input type="text" placeholder="Escreva seu nome completo" required />
+        <input
+          type="text"
+          placeholder="Escreva seu nome completo"
+          name="name"
+          onChange={onChangeInputValue}
+        />
       </FormField>
       <FormField
         label="Email"
-        error={validation && validation.email && 'O campo email é obrigatório'}
+        error={
+          validatedFields &&
+          validatedFields.email &&
+          'O campo email é obrigatório'
+        }
       >
         <input
+          validate="true"
           type="text"
           name="email"
           placeholder="Escreva seu email"
@@ -42,32 +60,64 @@ const SignUpFormComponent = ({ validation, onChangeInputValue, saveUser }) => (
       </FormField>
       <FormSection>
         <FormField label="CPF">
-          <input type="text" placeholder="998.767.888-70" />
+          <input
+            type="text"
+            name="cpf"
+            placeholder="998.767.888-70"
+            onChange={onChangeInputValue}
+          />
         </FormField>
         <FormField label="Data de nascimento">
-          <input type="text" placeholder="21/12/1990" />
+          <input
+            type="text"
+            name="date_of_birth"
+            placeholder="21/12/1990"
+            onChange={onChangeInputValue}
+          />
         </FormField>
       </FormSection>
-      <FormField label="Senha">
-        <input type="password" placeholder="Cadastre uma senha" />
-      </FormField>
-      <Checkbox
-        fontSize="12px"
-        color="#cccccc"
-        name="terms_agreement"
-        onChange={onChangeInputValue}
-        label={
-          <React.Fragment>
-            Li e estou de acordo com a
-            <a href="#to_somewhen"> Política de Privacidade </a>e a
-            <a href="#to_somewhere"> Política de Uso de Informações</a>.
-          </React.Fragment>
+      <FormField
+        label="Senha"
+        error={
+          validatedFields &&
+          validatedFields.password &&
+          'O campo senha é obrigatório'
         }
-      />
+      >
+        <input
+          validate="true"
+          type="password"
+          name="password"
+          placeholder="Cadastre uma senha"
+          onChange={onChangeInputValue}
+        />
+      </FormField>
+      <FormField
+        error={
+          validatedFields &&
+          validatedFields.terms_agreement &&
+          'É necessário aceitar os termos'
+        }
+      >
+        <Checkbox
+          fontSize="12px"
+          color="#cccccc"
+          name="terms_agreement"
+          onChange={onChangeInputValue}
+          label={
+            <React.Fragment>
+              Li e estou de acordo com a
+              <a href="#to_somewhen"> Política de Privacidade </a>e a
+              <a href="#to_somewhere"> Política de Uso de Informações</a>.
+            </React.Fragment>
+          }
+        />
+      </FormField>
       <Button
         type="primary"
         icon={<img src={PadlockIcon} alt="" />}
         onClick={saveUser}
+        disabled={isEmpty(omitBy(formValues, isEmpty))}
       >
         Cadastrar
       </Button>
@@ -79,34 +129,67 @@ const SignUpFormComponent = ({ validation, onChangeInputValue, saveUser }) => (
 );
 
 SignUpFormComponent.propTypes = {
-  validation: PropTypes.object.isRequired,
+  validatedFields: PropTypes.object.isRequired,
+  formValues: PropTypes.object.isRequired,
   onChangeInputValue: PropTypes.func.isRequired,
   saveUser: PropTypes.func.isRequired,
 };
 
 export default withStateHandlers(
-  { validation: {}, formValues: {} },
   {
-    onChangeInputValue: ({ formValues, validation }) => evt => {
+    validatedFields: {
+      email: false,
+      password: false,
+      terms_agreement: false,
+    },
+    formValues: {},
+  },
+  {
+    onChangeInputValue: ({ formValues, validatedFields }) => evt => {
       const inputValue =
         evt.target.type === 'checkbox' ? evt.target.checked : evt.target.value;
 
-      if (!evt.target.value) {
-        Object.assign(formValues, { [evt.target.name]: null });
-        return Object.assign(validation, {
-          [evt.target.name]: true,
-        });
+      const availableInputs =
+        evt.target.getAttribute('validate') || evt.target.type === 'checkbox';
+
+      if (!inputValue) {
+        if (availableInputs) {
+          Object.assign(validatedFields, {
+            [evt.target.name]: true,
+          });
+        }
+        return Object.assign(formValues, { [evt.target.name]: null });
       }
 
-      Object.assign(validation, { [evt.target.name]: false });
+      if (availableInputs) {
+        Object.assign(validatedFields, { [evt.target.name]: false });
+      }
+
       return Object.assign(formValues, {
         [evt.target.name]: inputValue,
       });
     },
-    saveUser: ({ formValues }) => evt => {
-      // function to handle form data
+    saveUser: ({ formValues, validatedFields }) => evt => {
       evt.preventDefault();
-      return console.log(formValues);
+      const fieldKeys = [];
+
+      if (!has(formValues, Object.keys(validatedFields))) {
+        Object.entries(validatedFields).forEach(([key, value]) => {
+          if (!has(formValues, key) && !value) {
+            fieldKeys.push(key);
+          }
+        });
+
+        if (fieldKeys.length) {
+          return fieldKeys.map(key =>
+            Object.assign(validatedFields, {
+              [key]: true,
+            })
+          );
+        }
+      }
+
+      return console.log('formData', formValues);
     },
   }
 )(SignUpFormComponent);

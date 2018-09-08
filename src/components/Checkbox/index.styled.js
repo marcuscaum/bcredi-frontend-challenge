@@ -34,7 +34,7 @@ export const CheckboxInput = styled.input.attrs({
 })`
   display: none;
 
-  &:checked + ${CheckboxLabel /* sc-sel */}::before {
+  &:checked + ${CheckboxLabel}::before {
     content: url('${CheckImage}');
     background-color: ${({ theme: { primary } }) => primary};
     border: none;
@@ -48,5 +48,4 @@ export const CheckboxContainer = styled.div`
   border: 1px solid ${({ theme: { ultraLightGray } }) => ultraLightGray};
   padding: 10px 12px;
   border-radius: 3px;
-  margin-bottom: 48px;
 `;

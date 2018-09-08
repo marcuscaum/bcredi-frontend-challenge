@@ -13,6 +13,10 @@ const Button = styled.button`
   box-sizing: border-box;
   position: relative;
 
+  &:disabled {
+    background-color: #a6b9dc;
+  }
+
   span {
     position: absolute;
     left: 30px;

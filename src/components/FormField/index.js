@@ -5,20 +5,21 @@ import { FormField, Label } from './index.styled';
 
 const FormFieldComponent = ({ label, error, children }) => (
   <FormField error={error}>
-    <Label>{label}</Label>
+    {label && <Label>{label}</Label>}
     {children}
     {error && <span>{error}</span>}
   </FormField>
 );
 
 FormFieldComponent.propTypes = {
-  error: PropTypes.bool,
-  label: PropTypes.string.isRequired,
+  error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  label: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
 FormFieldComponent.defaultProps = {
   error: null,
+  label: null,
 };
 
 export default FormFieldComponent;

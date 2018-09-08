@@ -3,7 +3,10 @@
 exports[`[Component] SideImage should render the component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SideImageComponent />,
+  Symbol(enzyme.__unrendered__): <SideImageComponent
+    message="Test message"
+    messageAuthor="Test message author"
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -19,8 +22,12 @@ ShallowWrapper {
     "props": Object {
       "children": <styled.div>
         <styled.div>
-                <styled.p />
-                <styled.p />
+                <styled.p>
+                        Test message
+                </styled.p>
+                <styled.p>
+                        Test message author
+                </styled.p>
         </styled.div>
 </styled.div>,
     },
@@ -31,8 +38,12 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <styled.div>
-          <styled.p />
-          <styled.p />
+          <styled.p>
+                    Test message
+          </styled.p>
+          <styled.p>
+                    Test message author
+          </styled.p>
 </styled.div>,
       },
       "ref": null,
@@ -42,8 +53,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <styled.p />,
-            <styled.p />,
+            <styled.p>
+              Test message
+</styled.p>,
+            <styled.p>
+              Test message author
+</styled.p>,
           ],
         },
         "ref": null,
@@ -53,10 +68,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": undefined,
+              "children": "Test message",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": "Test message",
             "type": [Function],
           },
           Object {
@@ -64,10 +79,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": undefined,
+              "children": "Test message author",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": "Test message author",
             "type": [Function],
           },
         ],
@@ -85,8 +100,12 @@ ShallowWrapper {
       "props": Object {
         "children": <styled.div>
           <styled.div>
-                    <styled.p />
-                    <styled.p />
+                    <styled.p>
+                              Test message
+                    </styled.p>
+                    <styled.p>
+                              Test message author
+                    </styled.p>
           </styled.div>
 </styled.div>,
       },
@@ -97,8 +116,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": <styled.div>
-            <styled.p />
-            <styled.p />
+            <styled.p>
+                        Test message
+            </styled.p>
+            <styled.p>
+                        Test message author
+            </styled.p>
 </styled.div>,
         },
         "ref": null,
@@ -108,8 +131,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <styled.p />,
-              <styled.p />,
+              <styled.p>
+                Test message
+</styled.p>,
+              <styled.p>
+                Test message author
+</styled.p>,
             ],
           },
           "ref": null,
@@ -119,10 +146,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": undefined,
+                "children": "Test message",
               },
               "ref": null,
-              "rendered": null,
+              "rendered": "Test message",
               "type": [Function],
             },
             Object {
@@ -130,10 +157,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": undefined,
+                "children": "Test message author",
               },
               "ref": null,
-              "rendered": null,
+              "rendered": "Test message author",
               "type": [Function],
             },
           ],
