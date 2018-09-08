@@ -14,7 +14,11 @@ export const FormFieldComponent = ({ label, error, children }) => (
 FormFieldComponent.propTypes = {
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   label: PropTypes.string,
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.element,
+    PropTypes.node,
+  ]).isRequired,
 };
 
 FormFieldComponent.defaultProps = {

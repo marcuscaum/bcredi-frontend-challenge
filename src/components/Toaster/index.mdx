@@ -1,0 +1,27 @@
+---
+name: Toaster
+---
+
+
+import { Playground, PropsTable } from 'docz'
+import { toast } from 'react-toastify';
+
+import Toaster from './index'
+import Button  from '../Button/index';
+
+
+# Toaster
+
+<PropsTable of={Toaster} />
+
+## Basic usage
+
+<Playground>
+  <Toaster />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+  <Button onClick={() => toast("Example of notification!")}>Notify!</Button>
+</Playground>

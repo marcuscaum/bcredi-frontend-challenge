@@ -37,30 +37,30 @@ export default {
     const emailRegex =
       "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$";
 
-    if (has(validatedFields, Object.keys(formValues))) {
-      Object.entries(validatedFields).forEach(([key]) => {
-        if (!has(formValues, key)) {
-          fieldKeys.push(key);
-        }
+    Object.entries(validatedFields).forEach(([key]) => {
+      if (!has(formValues, key)) {
+        fieldKeys.push(key);
+      }
+    });
+
+    if (formValues.email && !formValues.email.match(emailRegex)) {
+      Object.assign(validatedFields, {
+        email: true,
       });
-
-      if (!formValues.email.match(emailRegex)) {
-        Object.assign(validatedFields, {
-          email: true,
-        });
-        Object.assign(validationErrorMessages, {
-          email: 'Adicione um email válido',
-        });
-      }
-
-      if (fieldKeys.length) {
-        return fieldKeys.map(key =>
-          Object.assign(validatedFields, {
-            [key]: true,
-          })
-        );
-      }
+      Object.assign(validationErrorMessages, {
+        email: 'Adicione um email válido',
+      });
     }
+
+    if (fieldKeys.length) {
+      return fieldKeys.map(key =>
+        Object.assign(validatedFields, {
+          [key]: true,
+        })
+      );
+    }
+
+    console.table(formValues);
 
     return toast('Parabéns! Cadastro realizado com sucesso!', {
       position: toast.POSITION.TOP_CENTER,

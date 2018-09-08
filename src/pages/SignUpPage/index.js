@@ -2,9 +2,10 @@ import React from 'react';
 import MediaQuery from 'react-responsive';
 
 import SideImage from 'components/SideImage';
-import SignUpForm from 'components/SignUpForm';
 import NavBar from 'components/NavBar';
 import Toaster from 'components/Toaster';
+
+import SignUpForm from 'containers/SignUpForm';
 
 import { MainLayout, Container, FormContainer } from './index.styled';
 
