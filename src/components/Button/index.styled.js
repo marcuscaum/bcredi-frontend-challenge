@@ -12,9 +12,15 @@ const Button = styled.button`
   border-radius: 3px;
   box-sizing: border-box;
   position: relative;
+  cursor: pointer;
 
   &:disabled {
-    background-color: #a6b9dc;
+    background-color: #a6b9dc !important;
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    background-color: #4565a2;
   }
 
   span {
