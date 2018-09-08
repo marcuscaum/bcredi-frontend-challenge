@@ -1,0 +1,16 @@
+{
+  "vendors.css": "/static/css/vendors.6a33381201a851b7d4fc.css",
+  "vendors.js": "/static/js/vendors.040668ad.js",
+  "app.js": "/static/js/app.05cef321.js",
+  "src-components-button-index.js": "/static/js/src-components-button-index.c0ff7089.js",
+  "src-components-checkbox-index.js": "/static/js/src-components-checkbox-index.f77e4274.js",
+  "src-components-form-field-index.js": "/static/js/src-components-form-field-index.3147a388.js",
+  "src-components-nav-bar-index.js": "/static/js/src-components-nav-bar-index.ca1b7312.js",
+  "src-components-side-image-index.js": "/static/js/src-components-side-image-index.45b33fcd.js",
+  "src-components-toaster-index.js": "/static/js/src-components-toaster-index.ed75100d.js",
+  "runtime~app.js": "/static/js/runtime~app.6a33381201a851b7d4fc.js",
+  "static/img/check.svg": "/static/img/check.291dc2e3.svg",
+  "static/img/signup_page_image.png": "/static/img/signup_page_image.5dea0627.png",
+  "static/img/logo.svg": "/static/img/logo.b680d8a5.svg",
+  "index.html": "/index.html"
+}

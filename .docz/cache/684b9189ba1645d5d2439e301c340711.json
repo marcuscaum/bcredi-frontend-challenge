@@ -1,1 +1,40 @@
-{"remainingRequest":"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js?{\"presets\":[[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-preset-docz/dist/index.js\",{\"flow\":true,\"typescript\":false,\"parseProps\":true}]],\"plugins\":[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/react-hot-loader/babel.js\"],\"cacheDirectory\":true,\"babelrc\":false}!/home/ubuntu/bcredi-frontend-challenge/src/components/Toaster/index.js","dependencies":[{"path":"/home/ubuntu/bcredi-frontend-challenge/src/components/Toaster/index.js","mtime":1536385259189},{"path":"/home/ubuntu/bcredi-frontend-challenge/node_modules/cache-loader/dist/cjs.js","mtime":0},{"path":"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js","mtime":499162500000}],"contextDependencies":[],"result":["var _jsxFileName = \"/home/ubuntu/bcredi-frontend-challenge/src/components/Toaster/index.js\";\n\n(function () {\n  var enterModule = require('react-hot-loader').enterModule;\n\n  enterModule && enterModule(module);\n})();\n\nimport React from 'react';\nimport { lifecycle } from 'recompose';\nimport { ToastContainer } from 'react-toastify';\nimport 'react-toastify/dist/ReactToastify.css';\nimport resetToastStyles from './utils/reset-toast-styles';\n\nvar Toaster = function Toaster(props) {\n  return React.createElement(ToastContainer, Object.assign({\n    className: \"toast-container\",\n    toastClassName: \"toast-container__toast\",\n    bodyClassName: \"toast-container__body\",\n    hideProgressBar: true\n  }, props, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }));\n};\n\nvar _default = lifecycle({\n  componentWillMount: function componentWillMount() {\n    resetToastStyles();\n  }\n})(Toaster);\n\nexport default _default;\n;\n\n(function () {\n  var reactHotLoader = require('react-hot-loader').default;\n\n  var leaveModule = require('react-hot-loader').leaveModule;\n\n  if (!reactHotLoader) {\n    return;\n  }\n\n  reactHotLoader.register(Toaster, \"Toaster\", \"/home/ubuntu/bcredi-frontend-challenge/src/components/Toaster/index.js\");\n  reactHotLoader.register(_default, \"default\", \"/home/ubuntu/bcredi-frontend-challenge/src/components/Toaster/index.js\");\n  leaveModule(module);\n})();\n\n;\nToaster.__docgenInfo = {\n  \"description\": \"\",\n  \"methods\": [],\n  \"displayName\": \"Toaster\"\n};",{"version":3,"sources":["/home/ubuntu/bcredi-frontend-challenge/src/components/Toaster/index.js"],"names":["React","lifecycle","ToastContainer","resetToastStyles","Toaster","props","componentWillMount"],"mappings":";;;;;;;;AAAA,OAAOA,KAAP,MAAkB,OAAlB;AACA,SAASC,SAAT,QAA0B,WAA1B;AACA,SAASC,cAAT,QAA+B,gBAA/B;AAEA,OAAO,uCAAP;AAEA,OAAOC,gBAAP,MAA6B,4BAA7B;;AAEA,IAAMC,OAAO,GAAG,SAAVA,OAAU,CAAAC,KAAK;AAAA,SACnB,oBAAC,cAAD;AACE,IAAA,SAAS,EAAC,iBADZ;AAEE,IAAA,cAAc,EAAC,wBAFjB;AAGE,IAAA,aAAa,EAAC,uBAHhB;AAIE,IAAA,eAAe;AAJjB,KAKMA,KALN;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KADmB;AAAA,CAArB;;eAUeJ,SAAS,CAAC;AACvBK,EAAAA,kBADuB,gCACF;AACnBH,IAAAA,gBAAgB;AACjB;AAHsB,CAAD,CAAT,CAIZC,OAJY,C;;AAAf;;;;;;;;;;;;0BAVMA,O","sourcesContent":["import React from 'react';\nimport { lifecycle } from 'recompose';\nimport { ToastContainer } from 'react-toastify';\n\nimport 'react-toastify/dist/ReactToastify.css';\n\nimport resetToastStyles from './utils/reset-toast-styles';\n\nconst Toaster = props => (\n  <ToastContainer\n    className=\"toast-container\"\n    toastClassName=\"toast-container__toast\"\n    bodyClassName=\"toast-container__body\"\n    hideProgressBar\n    {...props}\n  />\n);\n\nexport default lifecycle({\n  componentWillMount() {\n    resetToastStyles();\n  },\n})(Toaster);\n"]}]}
+{
+  "remainingRequest": "/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js?{\"presets\":[[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-preset-docz/dist/index.js\",{\"flow\":true,\"typescript\":false,\"parseProps\":true}]],\"plugins\":[\"/home/ubuntu/bcredi-frontend-challenge/node_modules/react-hot-loader/babel.js\"],\"cacheDirectory\":true,\"babelrc\":false}!/home/ubuntu/bcredi-frontend-challenge/src/components/Toaster/index.js",
+  "dependencies": [
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/src/components/Toaster/index.js",
+      "mtime": 1536385259189
+    },
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/node_modules/cache-loader/dist/cjs.js",
+      "mtime": 0
+    },
+    {
+      "path": "/home/ubuntu/bcredi-frontend-challenge/node_modules/babel-loader/lib/index.js",
+      "mtime": 499162500000
+    }
+  ],
+  "contextDependencies": [],
+  "result": [
+    "var _jsxFileName = \"/home/ubuntu/bcredi-frontend-challenge/src/components/Toaster/index.js\";\n\n(function () {\n  var enterModule = require('react-hot-loader').enterModule;\n\n  enterModule && enterModule(module);\n})();\n\nimport React from 'react';\nimport { lifecycle } from 'recompose';\nimport { ToastContainer } from 'react-toastify';\nimport 'react-toastify/dist/ReactToastify.css';\nimport resetToastStyles from './utils/reset-toast-styles';\n\nvar Toaster = function Toaster(props) {\n  return React.createElement(ToastContainer, Object.assign({\n    className: \"toast-container\",\n    toastClassName: \"toast-container__toast\",\n    bodyClassName: \"toast-container__body\",\n    hideProgressBar: true\n  }, props, {\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 10\n    },\n    __self: this\n  }));\n};\n\nvar _default = lifecycle({\n  componentWillMount: function componentWillMount() {\n    resetToastStyles();\n  }\n})(Toaster);\n\nexport default _default;\n;\n\n(function () {\n  var reactHotLoader = require('react-hot-loader').default;\n\n  var leaveModule = require('react-hot-loader').leaveModule;\n\n  if (!reactHotLoader) {\n    return;\n  }\n\n  reactHotLoader.register(Toaster, \"Toaster\", \"/home/ubuntu/bcredi-frontend-challenge/src/components/Toaster/index.js\");\n  reactHotLoader.register(_default, \"default\", \"/home/ubuntu/bcredi-frontend-challenge/src/components/Toaster/index.js\");\n  leaveModule(module);\n})();\n\n;\nToaster.__docgenInfo = {\n  \"description\": \"\",\n  \"methods\": [],\n  \"displayName\": \"Toaster\"\n};",
+    {
+      "version": 3,
+      "sources": [
+        "/home/ubuntu/bcredi-frontend-challenge/src/components/Toaster/index.js"
+      ],
+      "names": [
+        "React",
+        "lifecycle",
+        "ToastContainer",
+        "resetToastStyles",
+        "Toaster",
+        "props",
+        "componentWillMount"
+      ],
+      "mappings": ";;;;;;;;AAAA,OAAOA,KAAP,MAAkB,OAAlB;AACA,SAASC,SAAT,QAA0B,WAA1B;AACA,SAASC,cAAT,QAA+B,gBAA/B;AAEA,OAAO,uCAAP;AAEA,OAAOC,gBAAP,MAA6B,4BAA7B;;AAEA,IAAMC,OAAO,GAAG,SAAVA,OAAU,CAAAC,KAAK;AAAA,SACnB,oBAAC,cAAD;AACE,IAAA,SAAS,EAAC,iBADZ;AAEE,IAAA,cAAc,EAAC,wBAFjB;AAGE,IAAA,aAAa,EAAC,uBAHhB;AAIE,IAAA,eAAe;AAJjB,KAKMA,KALN;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,KADmB;AAAA,CAArB;;eAUeJ,SAAS,CAAC;AACvBK,EAAAA,kBADuB,gCACF;AACnBH,IAAAA,gBAAgB;AACjB;AAHsB,CAAD,CAAT,CAIZC,OAJY,C;;AAAf;;;;;;;;;;;;0BAVMA,O",
+      "sourcesContent": [
+        "import React from 'react';\nimport { lifecycle } from 'recompose';\nimport { ToastContainer } from 'react-toastify';\n\nimport 'react-toastify/dist/ReactToastify.css';\n\nimport resetToastStyles from './utils/reset-toast-styles';\n\nconst Toaster = props => (\n  <ToastContainer\n    className=\"toast-container\"\n    toastClassName=\"toast-container__toast\"\n    bodyClassName=\"toast-container__body\"\n    hideProgressBar\n    {...props}\n  />\n);\n\nexport default lifecycle({\n  componentWillMount() {\n    resetToastStyles();\n  },\n})(Toaster);\n"
+      ]
+    }
+  ]
+}

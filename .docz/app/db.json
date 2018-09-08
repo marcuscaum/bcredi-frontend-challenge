@@ -78,28 +78,6 @@
         }
       ]
     },
-    "src/components/SideImage/index.mdx": {
-      "name": "SideImage",
-      "id": "da3e853dccb4b71e38b3c2cb765b6c7a",
-      "filepath": "src/components/SideImage/index.mdx",
-      "link": null,
-      "slug": "src-components-side-image-index",
-      "route": "/src-components-side-image-index",
-      "order": 0,
-      "menu": null,
-      "headings": [
-        {
-          "depth": 1,
-          "slug": "sideimage",
-          "value": "SideImage"
-        },
-        {
-          "depth": 2,
-          "slug": "basic-usage",
-          "value": "Basic usage"
-        }
-      ]
-    },
     "src/components/NavBar/index.mdx": {
       "name": "NavBar",
       "id": "e3ff12cb3a9e3763039d1f3593d040e7",
@@ -114,6 +92,28 @@
           "depth": 1,
           "slug": "navbar",
           "value": "NavBar"
+        },
+        {
+          "depth": 2,
+          "slug": "basic-usage",
+          "value": "Basic usage"
+        }
+      ]
+    },
+    "src/components/SideImage/index.mdx": {
+      "name": "SideImage",
+      "id": "da3e853dccb4b71e38b3c2cb765b6c7a",
+      "filepath": "src/components/SideImage/index.mdx",
+      "link": null,
+      "slug": "src-components-side-image-index",
+      "route": "/src-components-side-image-index",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "sideimage",
+          "value": "SideImage"
         },
         {
           "depth": 2,
