@@ -36,6 +36,7 @@ ShallowWrapper {
           />
 </MediaQuery>,
         <styled.div>
+          <lifecycle(Toaster) />
           <NavBarComponent />
           <styled.div>
                     <withStateHandlers(Component) />
@@ -92,6 +93,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
+            <lifecycle(Toaster) />,
             <NavBarComponent />,
             <styled.div>
               <withStateHandlers(Component) />
@@ -100,6 +102,15 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -159,6 +170,7 @@ ShallowWrapper {
             />
 </MediaQuery>,
           <styled.div>
+            <lifecycle(Toaster) />
             <NavBarComponent />
             <styled.div>
                         <withStateHandlers(Component) />
@@ -215,6 +227,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
+              <lifecycle(Toaster) />,
               <NavBarComponent />,
               <styled.div>
                 <withStateHandlers(Component) />
@@ -223,6 +236,15 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,

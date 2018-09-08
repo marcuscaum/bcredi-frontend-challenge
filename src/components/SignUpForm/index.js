@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStateHandlers } from 'recompose';
+import { toast } from 'react-toastify';
+
 import isEmpty from 'lodash.isempty';
 import omitBy from 'lodash.omitby';
 import has from 'lodash.has';
@@ -171,6 +173,7 @@ export default withStateHandlers(
     },
     saveUser: ({ formValues, validatedFields }) => evt => {
       evt.preventDefault();
+
       const fieldKeys = [];
 
       if (!has(formValues, Object.keys(validatedFields))) {
@@ -189,7 +192,9 @@ export default withStateHandlers(
         }
       }
 
-      return console.log('formData', formValues);
+      return toast('Parabéns! Cadastro realizado com sucesso!', {
+        position: toast.POSITION.TOP_CENTER,
+      });
     },
   }
 )(SignUpFormComponent);

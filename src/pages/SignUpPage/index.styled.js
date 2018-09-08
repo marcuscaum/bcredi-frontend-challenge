@@ -14,4 +14,5 @@ export const FormContainer = styled.div`
 
 export const Container = styled.div`
   width: 100%;
+  position: relative;
 `;
