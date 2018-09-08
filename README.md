@@ -7,7 +7,7 @@
 
 ### Web
 
-[SignUp Page](https://bcredi-frontend-challenge-phpfivvojd.now.sh/) 
+[SignUp Page](https://build-uiebsicjjs.now.sh) 
 
 [Components Documentation](https://dist-dlwlaamema.now.sh/)
 
